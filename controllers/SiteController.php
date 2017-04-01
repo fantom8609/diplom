@@ -19,6 +19,8 @@ class SiteController
 
         $tasks = Task::getTasksList();
 
+       if (empty($_SESSION)) {header("Location: /user/login");}
+
         // Подключаем вид
         require_once(ROOT . '/views/site/index.php');
         return true;

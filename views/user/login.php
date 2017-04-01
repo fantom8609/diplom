@@ -15,11 +15,12 @@
                 <?php endif; ?>
 
                 <div class="signup-form"><!--sign up form-->
-                    <h2>Вход на сайт</h2>
+                    <h2>Вход в систему</h2>
                     <form action="#" method="post">
-                        <input type="email" name="email" placeholder="E-mail" value="<?php echo $email; ?>"/>
-                        <input type="password" name="password" placeholder="Пароль" value="<?php echo $password; ?>"/>
+                        <input type="email" name="email" placeholder="E-mail" />
+                        <input type="password" name="password" placeholder="Пароль" />
                         <input type="submit" name="submit" class="btn btn-default" value="Вход" />
+                        <a href="/user/register">Зарегистрироваться</a>
                     </form>
                 </div><!--/sign up form-->
 

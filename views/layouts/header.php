@@ -31,13 +31,18 @@
 
 
             <header id="header"><!--header-->
-        
+                <?php if(((!empty($_SESSION)))): ?>
+                    <a href="/user/logout">Выход</a>
+                
+                    
+                <?php endif; ?>
+
 
                 <div class="header-middle"><!--header-middle-->
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-4">
-
+                            <?php print_r($_SESSION) ?>
                                
                             </div>
                             <div class="col-sm-8">

@@ -41,10 +41,12 @@ return array(
     'about' => 'site/about',
     
 
+    
     //регистрация пользователя
     'user/register' => 'user/register',
     // задача:
     'task/([0-9]+)' => 'task/view/$1', // actionView в TaskController
+   
     //страница рейтинг
     'rating' => 'site/rating',
     //страница 'статистика'

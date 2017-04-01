@@ -12,7 +12,7 @@
                     <?php if (isset($errors) && is_array($errors)): ?>
                         <ul>
                             <?php foreach ($errors as $error): ?>
-                                <li> - <?php echo $error; ?></li>
+                                <li> - <?php echo $error; print_r($_SESSION); ?></li>
                             <?php endforeach; ?>
                         </ul>
                     <?php endif; ?>
@@ -37,22 +37,19 @@
                                 <input placeholder="Специализация" type="text" name="spec" value="<?php echo $spec; ?>"/>
                             </div>
 
-                            
-                            <input type="text" name="work_exp" placeholder="Рабочий стаж(полных месяцев)" value="<?php echo $work_exp; ?>"/>
+                            <input type="text" name="work_exp" placeholder="Рабочий стаж(полных месяцев)" 
+                            value="<?php echo $work_exp; ?>"/>
+                            <input type="text" name="work_exp" placeholder="Рабочий стаж(полных месяцев)" 
+                            value="<?php echo $work_exp; ?>"/>
+
                             <input type="password" name="password" placeholder="Пароль" value="<?php echo $password; ?>"/>
-                            <input type="password" name="password_r" placeholder="Повторите пароль" value="<?php echo $password_r; ?>"/>
+                            <input type="password" name="password_r" placeholder="Повторите пароль"/>
 
                             <input type="email" name="email" placeholder="E-mail" value="<?php echo $email; ?>"/>
                             
                             <input type="submit" name="submit" class="btn btn-default" value="Регистрация" />
-
-
-
-    
-
-
-
                         </form>
+                        <a href="/user/login">Вход</a>
                     </div><!--/sign up form-->
                 
                 <?php endif; ?>

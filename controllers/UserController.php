@@ -69,8 +69,16 @@ class UserController
             if ($errors == false) {
                 // Если ошибок нет
                 // Регистрируем пользователя
+             $_SESSION['name'] = $name;
+             $_SESSION['surname'] = $surname;
+             $_SESSION['age'] = $age;
+             $_SESSION['spec'] = $spec;
+             $_SESSION['work_exp'] = $work_exp;
+             $_SESSION['password'] = $password;
+             $_SESSION['email'] = $email;
                 $result = User::register($name, $surname, $age, $spec, $work_exp, $password, $email);
-            }
+             }
+
         }
 
         // Подключаем вид
@@ -134,10 +142,17 @@ class UserController
         session_start();
         
         // Удаляем информацию о пользователе из сессии
-        unset($_SESSION["user"]);
+        unset ($_SESSION['name']);
+        unset ($_SESSION['surname']);
+        unset ($_SESSION['age']);
+        unset ($_SESSION['email']);
+        unset ($_SESSION['password']);
+        unset ($_SESSION['work_exp']);
+        unset ($_SESSION['spec']);
+        unset ($_SESSION['user']);
         
         // Перенаправляем пользователя на главную страницу
-        header("Location: /");
+        header("Location: /user/login");
     }
 
 }
