@@ -6,7 +6,11 @@
 
             <div class="col-sm-4 col-sm-offset-4 padding-right">
 
-               
+            	<ul>
+            	<?php foreach ($user as $userItem): ?>
+            			<li> - <?php echo $userItem;?></li>
+            		<?php endforeach; ?>
+            	</ul>
 
             
             </div>

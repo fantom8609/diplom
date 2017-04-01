@@ -6,11 +6,6 @@
 class UserController
 {
 
-
-
-
-
-
     /**
      * Action для страницы "Регистрация"
      */
@@ -154,5 +149,23 @@ class UserController
         // Перенаправляем пользователя на главную страницу
         header("Location: /user/login");
     }
+
+        /**
+     * Action для страницы просмотра данных о пользователе
+     * @param integer $productId <p>id товара</p>
+     */
+    public function actionView($userId)
+    {
+
+        // Получаем инфомрацию о пользователе
+        $user = User::getUserById($userId);
+
+        // Подключаем вид
+        require_once(ROOT . '/site/profile.php');
+        return true;
+    }
+
+
+
 
 }
