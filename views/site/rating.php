@@ -1,5 +1,5 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
-
+<?php include ROOT . '/views/layouts/main_menu.php'; ?>
 <section>
     <div class="container">
         <div class="row">

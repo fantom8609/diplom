@@ -14,8 +14,8 @@
                                 <span>
                                     <span>Статус задачи: <?php echo $task['status']; ?></span>
                                 </span>
-                                <span class="padding-right"><button>Отметить выполнение</button></span>
                                 
+                                <span class="padding-right"><button>Отметить выполнение</button></span>
                             </div><!--/product-information-->
                         </div>
                     </div>

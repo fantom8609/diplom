@@ -1,5 +1,5 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
-
+<?php include ROOT . '/views/layouts/main_menu.php'; ?>
 <section>
     <div class="container">
         <div class="row">
@@ -7,6 +7,9 @@
                 <div class="left-sidebar">
 
                    
+
+
+                    
 
                     <div class="panel-group category-tests-2">Текущие:
                         <?php foreach ($tasks as $taskItem): ?>

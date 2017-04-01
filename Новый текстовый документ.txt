@@ -1,0 +1,6 @@
+echo "# diplom" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/fantom8609/diplom.git
+git push -u origin master

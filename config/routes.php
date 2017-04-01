@@ -40,12 +40,14 @@ return array(
     'contacts' => 'site/contact',
     'about' => 'site/about',
     
-        // задача:
-    'task/([0-9]+)' => 'task/view/$1', // actionView в TaskController
 
+    //регистрация пользователя
+    'user/register' => 'user/register',
+    // задача:
+    'task/([0-9]+)' => 'task/view/$1', // actionView в TaskController
     //страница рейтинг
     'rating' => 'site/rating',
-    //страница 'статистика''
+    //страница 'статистика'
     'profile' => 'site/profile',
     //страница "профиль"
     'statistic' => 'site/statistic',

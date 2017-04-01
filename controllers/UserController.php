@@ -5,6 +5,12 @@
  */
 class UserController
 {
+
+
+
+
+
+
     /**
      * Action для страницы "Регистрация"
      */
@@ -58,6 +64,7 @@ class UserController
             if($password != $password_r) {
                 $errors[] = 'Пароли не совпадают';
             }
+
             
             if ($errors == false) {
                 // Если ошибок нет
@@ -109,7 +116,7 @@ class UserController
                 User::auth($userId);
 
                 // Перенаправляем пользователя в закрытую часть - кабинет 
-                header("Location: /cabinet");
+                header("Location: /");
             }
         }
 
