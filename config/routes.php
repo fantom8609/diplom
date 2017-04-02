@@ -46,7 +46,8 @@ return array(
     //вход/выход
     'user/login' => 'user/login',
     'user/logout' => 'user/logout',
-   
+
+    
 
     //регистрация пользователя
     'user/register' => 'user/register',
@@ -55,12 +56,16 @@ return array(
 
     //страница рейтинг
     'rating' => 'site/rating',
+
+    //информация о пользователе
+    'profile/([0-9]+)' => 'user/view/$1',
+
+    
     //страница 'статистика'
     'profile' => 'site/profile',
-     //информация о пользователе
-    'user/view' => 'site/profile',
     //страница "профиль"
     'statistic' => 'site/statistic',
+
     // Главная страница
     'index.php' => 'site/index', // actionIndex в SiteController
     '' => 'site/index', // actionIndex в SiteController

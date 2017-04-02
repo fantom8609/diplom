@@ -6,13 +6,7 @@
 
             <div class="col-sm-4 col-sm-offset-4 padding-right">
 
-            	<?php foreach ($user as $userItem): ?>
-            		<li> - <?php echo $userItem['name']; ?></li>
-            		<li> - <?php echo $userItem['surnane']; ?></li>
-            		<li> - <?php echo $userItem['name']; ?></li>
-            		<li> - <?php echo $userItem['name']; ?></li>
-            		<li> - <?php echo $userItem['name']; ?></li>
-            	<?php endforeach; ?>
+       
             	<div>Hello,world!</div>
 
      
