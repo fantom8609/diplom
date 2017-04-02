@@ -58,11 +58,10 @@ return array(
     'rating' => 'site/rating',
 
     //информация о пользователе
-    'profile/([0-9]+)' => 'user/view/$1',
+    'profile/([0-9]+)' => 'site/profile/$1',
 
     
-    //страница 'статистика'
-    'profile' => 'site/profile',
+    
     //страница "профиль"
     'statistic' => 'site/statistic',
 

@@ -25,10 +25,10 @@ class User
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':name', $name, PDO::PARAM_STR);
-        $result->bindParam(':surname', $name, PDO::PARAM_STR);
-        $result->bindParam(':age', $name, PDO::PARAM_INT);
-        $result->bindParam(':spec', $name, PDO::PARAM_STR);
-        $result->bindParam(':work_exp', $name, PDO::PARAM_INT);
+        $result->bindParam(':surname', $surname, PDO::PARAM_STR);
+        $result->bindParam(':age', $age, PDO::PARAM_INT);
+        $result->bindParam(':spec', $spec, PDO::PARAM_STR);
+        $result->bindParam(':work_exp', $work_exp, PDO::PARAM_INT);
         $result->bindParam(':password', $password, PDO::PARAM_STR);
         $result->bindParam(':email', $email, PDO::PARAM_STR);
 
@@ -213,12 +213,29 @@ class User
         $db = Db::getConnection();
 
         // Текст запроса к БД
-        $id=$_SESSION['user'];
+        $name = false;
+        $surname = false;
+        $age = false;
+        $spec = false;
+        $work_exp = false;
+        $password =  false;
+        $email = false;
+
+
         $sql = 'SELECT * FROM user WHERE id = :id';
 
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':id', $id, PDO::PARAM_INT);
+        /*
+        $result->bindParam(':name', $name, PDO::PARAM_STR);
+        $result->bindParam(':surname', $surname, PDO::PARAM_STR);
+        $result->bindParam(':age', $age, PDO::PARAM_INT);
+        $result->bindParam(':spec', $spec, PDO::PARAM_STR);
+        $result->bindParam(':work_exp', $work_exp, PDO::PARAM_INT);
+        $result->bindParam(':password', $password, PDO::PARAM_STR);
+        $result->bindParam(':email', $email, PDO::PARAM_STR);
+        */
 
         // Указываем, что хотим получить данные в виде массива
         $result->setFetchMode(PDO::FETCH_ASSOC);

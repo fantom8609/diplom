@@ -150,6 +150,9 @@ class UserController
      * Action для страницы просмотра данных о пользователе
      * @param integer $productId <p>id товара</p>
      */
+    
+
+    /*
     public function actionView($userId)
     {
 
@@ -161,7 +164,7 @@ class UserController
         require_once(ROOT . '/views/site/profile.php');
         return true;
     }
-
+*/
 
 
 

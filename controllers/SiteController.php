@@ -34,8 +34,13 @@ class SiteController
     /**
      * Action для страницы "О магазине"
      */
-    public function actionProfile()
+        public function actionProfile($userId)
     {
+
+        // Получаем инфомрацию о пользователе
+        $userId=$_SESSION['user'];
+        $user = User::getUserById($userId);
+
         // Подключаем вид
         require_once(ROOT . '/views/site/profile.php');
         return true;
