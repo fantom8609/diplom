@@ -14,7 +14,6 @@ class UserController
         // Переменные для формы
         $name = false;
         $surname = false;
-        $fathername = false;
         $age = false;
         $spec = false;
         $work_exp = false;
@@ -64,16 +63,12 @@ class UserController
             if ($errors == false) {
                 // Если ошибок нет
                 // Регистрируем пользователя
-             $_SESSION['name'] = $name;
-             $_SESSION['surname'] = $surname;
-             $_SESSION['age'] = $age;
-             $_SESSION['spec'] = $spec;
-             $_SESSION['work_exp'] = $work_exp;
-             $_SESSION['password'] = $password;
-             $_SESSION['email'] = $email;
+             
                 $result = User::register($name, $surname, $age, $spec, $work_exp, $password, $email);
-             }
 
+                $userId = User::checkUserData($email, $password);
+                User::auth($userId);
+             }
         }
 
         // Подключаем вид
@@ -137,6 +132,7 @@ class UserController
         session_start();
         
         // Удаляем информацию о пользователе из сессии
+
         unset ($_SESSION['name']);
         unset ($_SESSION['surname']);
         unset ($_SESSION['age']);
@@ -158,10 +154,11 @@ class UserController
     {
 
         // Получаем инфомрацию о пользователе
+        $userId=$_SESSION['user'];
         $user = User::getUserById($userId);
 
         // Подключаем вид
-        require_once(ROOT . '/site/profile.php');
+        require_once(ROOT . '/views/site/profile.php');
         return true;
     }
 

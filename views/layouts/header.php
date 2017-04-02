@@ -33,9 +33,9 @@
             <header id="header"><!--header-->
                 <?php if(((!empty($_SESSION)))): ?>
                     <a href="/user/logout">Выход</a>
-                
-                    
                 <?php endif; ?>
+
+                
 
 
                 <div class="header-middle"><!--header-middle-->

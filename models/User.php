@@ -28,7 +28,7 @@ class User
         $result->bindParam(':surname', $name, PDO::PARAM_STR);
         $result->bindParam(':age', $name, PDO::PARAM_INT);
         $result->bindParam(':spec', $name, PDO::PARAM_STR);
-        $result->bindParam(':work_exp', $name, PDO::PARAM_STR);
+        $result->bindParam(':work_exp', $name, PDO::PARAM_INT);
         $result->bindParam(':password', $password, PDO::PARAM_STR);
         $result->bindParam(':email', $email, PDO::PARAM_STR);
 
@@ -213,6 +213,7 @@ class User
         $db = Db::getConnection();
 
         // Текст запроса к БД
+        $id=$_SESSION['user'];
         $sql = 'SELECT * FROM user WHERE id = :id';
 
         // Получение и возврат результатов. Используется подготовленный запрос

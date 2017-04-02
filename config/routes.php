@@ -2,6 +2,7 @@
 
 return array(
 
+   /*
     // Каталог:
     'catalog' => 'catalog/index', // actionIndex в CatalogController
     // Категория товаров:
@@ -39,10 +40,13 @@ return array(
     // О магазине
     'contacts' => 'site/contact',
     'about' => 'site/about',
+    */
     
 
-    
-
+    //вход/выход
+    'user/login' => 'user/login',
+    'user/logout' => 'user/logout',
+   
 
     //регистрация пользователя
     'user/register' => 'user/register',
@@ -53,6 +57,8 @@ return array(
     'rating' => 'site/rating',
     //страница 'статистика'
     'profile' => 'site/profile',
+     //информация о пользователе
+    'user/view' => 'site/profile',
     //страница "профиль"
     'statistic' => 'site/statistic',
     // Главная страница
