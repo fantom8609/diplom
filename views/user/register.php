@@ -6,6 +6,7 @@
 
             <div class="col-sm-4 col-sm-offset-4 padding-right">
 
+
                 
                 <?php if ($result): ?>
                     <p>Вы зарегистрированы! <a href="/">перейти в личный кабинет</a></p>
@@ -17,6 +18,8 @@
                             <?php endforeach; ?>
                         </ul>
                     <?php endif; ?>
+
+
 
                     <div class="signup-form"><!--sign up form-->
                         <h2>Регистрация в системе</h2>
@@ -48,7 +51,8 @@
                             
                             <input type="submit" name="submit" class="btn btn-default" value="Регистрация" />
                         </form>
-                        <a href="/user/login">Вход</a>
+                        <a href="/user/login">Вход</a> <br>
+                        <a href="/admin/login">Вход в панель администратора</a>
                     </div><!--/sign up form-->
                 
                 <?php endif; ?>

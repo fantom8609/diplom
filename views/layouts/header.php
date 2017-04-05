@@ -31,11 +31,15 @@
 
 
             <header id="header"><!--header-->
-                <?php if(((!empty($_SESSION)))): ?>
+                <?php if((!empty($_SESSION['user']))): ?>
                     <a href="/user/logout">Выход</a>
                 <?php endif; ?>
 
-                
+                  <?php if((!empty($_SESSION['admin']))): ?>
+                    <a href="/admin/logout">Выход</a>
+                <?php endif; ?>
+
+
 
 
                 <div class="header-middle"><!--header-middle-->

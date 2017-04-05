@@ -17,7 +17,6 @@
         			$invisible[$i] = preg_replace('/^[a-zA-Z0-9]+/','*',$pass);
         			print_r($invisible[$i]);
         		}
-        			
         			?> 
         			<br>
         			</li>

@@ -43,11 +43,19 @@ return array(
     */
     
 
+
+    
+
+    //Вход в админпанель
+    'admin/login' => 'admin/login',
+    'admin/logout' => 'admin/logout',
+
+    //Вход в админпанель
+    'admin' => 'admin/index',
+
     //вход/выход
     'user/login' => 'user/login',
     'user/logout' => 'user/logout',
-
-    
 
     //регистрация пользователя
     'user/register' => 'user/register',
@@ -60,7 +68,7 @@ return array(
     //информация о пользователе
     'profile/([0-9]+)' => 'site/profile/$1',
 
-    
+ 
     
     //страница "профиль"
     'statistic' => 'site/statistic',
