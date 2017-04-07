@@ -244,4 +244,37 @@ class User
         return $result->fetch();
     }
 
+        /**
+     * Возвращает список товаров
+     * @return array <p>Массив с товарами</p>
+     */
+    public static function getUsersList()
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+
+        // Получение и возврат результатов
+        $result = $db->query('SELECT id, name, surname, age, spec, work_exp, password, email FROM user ');
+        $usersList = array();
+        $i = 0;
+        while ($row = $result->fetch()) {
+            $usersList[$i]['id'] = $row['id'];
+            $usersList[$i]['name'] = $row['name'];
+            $usersList[$i]['surname'] = $row['surname'];
+            $usersList[$i]['age'] = $row['age'];
+            $usersList[$i]['spec'] = $row['spec'];
+            $usersList[$i]['work_exp'] = $row['work_exp'];
+            $usersList[$i]['password'] = $row['password'];
+            $usersList[$i]['email'] = $row['email'];
+
+            $i++;
+        }
+        return $usersList;
+    }
+
+
+
+
+
+
 }

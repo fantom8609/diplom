@@ -13,8 +13,7 @@ class SiteController
     {
 
         // Список категорий для левого меню
-        $categories = array();
-        $categories = Category::getCategoriesList();
+    
 
 
         $tasks = Task::getTasksList();

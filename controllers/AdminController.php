@@ -14,11 +14,13 @@ class AdminController
         // Проверка доступа
         //self::checkAdmin();
 
+        $categoriesList = Category::getCategoriesListAdmin();
+        $users = User::getUsersList();
+
         // Подключаем вид
         require_once(ROOT . '/views/admin/admin.php');
         return true;
     }
-
 
     /**
      * Action для страницы "Регистрация"
@@ -142,5 +144,16 @@ class AdminController
         // Перенаправляем пользователя на главную страницу
         header("Location: /admin/login");
     }
+
+
+
+
+
+
+
+
+
+
+
 
 }

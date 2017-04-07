@@ -45,6 +45,8 @@ return array(
 
 
     
+     
+    'admin/category' => 'adminCategory/index',
 
     //Вход в админпанель
     'admin/login' => 'admin/login',

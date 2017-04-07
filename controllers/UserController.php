@@ -150,21 +150,9 @@ class UserController
      * Action для страницы просмотра данных о пользователе
      * @param integer $productId <p>id товара</p>
      */
+
+
     
-
-    /*
-    public function actionView($userId)
-    {
-
-        // Получаем инфомрацию о пользователе
-        $userId=$_SESSION['user'];
-        $user = User::getUserById($userId);
-
-        // Подключаем вид
-        require_once(ROOT . '/views/site/profile.php');
-        return true;
-    }
-*/
 
 
 

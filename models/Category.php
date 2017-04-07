@@ -5,30 +5,28 @@
  */
 class Category
 {
-	 /**
-     * Returns an array of categories
+	        /**
+     * Возвращает массив категорий для списка на сайте
+     * @return array <p>Массив с категориями</p>
      */
-    public static function getCategoriesList()
+    public static function getCategoriesListAdmin()
     {
-
+        // Соединение с БД
         $db = Db::getConnection();
 
-        $categoryList = array();
+        // Запрос к БД
+        $result = $db->query('SELECT id, name FROM category');
 
-        $result = $db->query('SELECT id, name FROM category '
-                . 'ORDER BY sort_order ASC');
-
+        // Получение и возврат результатов
         $i = 0;
+        $categoryList = array();
         while ($row = $result->fetch()) {
             $categoryList[$i]['id'] = $row['id'];
             $categoryList[$i]['name'] = $row['name'];
             $i++;
         }
-
         return $categoryList;
     }
-
-
 
     
 }
