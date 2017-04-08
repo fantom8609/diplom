@@ -28,5 +28,18 @@ class Category
         return $categoryList;
     }
 
+
+    public static function getSpecialById($catId) {
+
+        switch($catId) {
+            case 1:  $special="PHP-developer";break;
+            case 2:  $special="Java-script developer";break;
+            case 3:  $special="Дизайнер";break;
+            case 4:  $special="Верстальщик";break;
+            case 5:  $special="SEO-специалист";break;
+        }
+        return $special;
+    }
+
     
 }

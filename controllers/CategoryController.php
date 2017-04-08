@@ -4,38 +4,38 @@
  * Контроллер CatalogController
  * Каталог товаров
  */
-class CatalogController
+class CategoryController
 {
+    public function actionIndex() {
 
-    /**
-     * Action для страницы "Каталог товаров"
-     */
-    public function actionIndex()
-    {
-        // Список категорий для левого меню
-        $categories = Category::getCategoriesList();
-
-        // Список последних товаров
-        $latestProducts = Product::getLatestProducts(12);
+        $categoryList = Category::getCategoriesListAdmin();
 
         // Подключаем вид
-        require_once(ROOT . '/views/catalog/index.php');
+        require_once(ROOT . '/views/catalog/category.php');
         return true;
+
     }
+
+
+
 
     /**
      * Action для страницы "Категория товаров"
      */
-    public function actionCategory($categoryId, $page = 1)
+    public function actionCategory($categoryId)
     {
-        // Список категорий для левого меню
-        $categories = Category::getCategoriesList();
+
+        
+        //echo $categoryId;
+
+        $categoryList = Category::getCategoriesListAdmin();
+        
 
         // Список товаров в категории
-        $categoryProducts = Product::getProductsListByCategory($categoryId, $page);
+        $categoryUsers = User::getUsersListByCategory($categoryId);
 
         // Общее количетсво товаров (необходимо для постраничной навигации)
-        $total = Product::getTotalProductsInCategory($categoryId);
+       // $total = User::getTotalProductsInCategory($categoryId);
 
 
         // Подключаем вид

@@ -44,9 +44,8 @@ return array(
     
 
 
-    
-     
-    'admin/category' => 'adminCategory/index',
+    //Вывести сотрудника по категории
+     'category/([0-9]+)' => 'category/category/$1', // actionCategory в CategoryController   
 
     //Вход в админпанель
     'admin/login' => 'admin/login',
@@ -61,6 +60,7 @@ return array(
 
     //регистрация пользователя
     'user/register' => 'user/register',
+
     // задача:
     'task/([0-9]+)' => 'task/view/$1', // actionView в TaskController
 
@@ -69,8 +69,6 @@ return array(
 
     //информация о пользователе
     'profile/([0-9]+)' => 'site/profile/$1',
-
- 
     
     //страница "профиль"
     'statistic' => 'site/statistic',

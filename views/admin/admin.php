@@ -29,8 +29,6 @@
 
 
           <div class="col-sm-4 padding-right">
-          <?php $i=1; ?>
-          <div class="<row">
 
               <div class="users_list">
 
@@ -54,9 +52,6 @@
           </div>
 
       </div>
-
-      
-  </div>
 
 </section>
 

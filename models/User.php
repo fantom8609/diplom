@@ -5,6 +5,8 @@
  */
 class User
 {
+     // Количество отображаемых товаров по умолчанию
+    const SHOW_BY_DEFAULT = 6;
 
     /**
      * Регистрация пользователя 
@@ -270,6 +272,80 @@ class User
             $i++;
         }
         return $usersList;
+    }
+
+
+
+    /**
+     * Возвращает список сотрудников в указанной категории
+     * @param type $categoryId <p>id категории</p>
+     * @param type $page [optional] <p>Номер страницы</p>
+     * @return type <p>Массив с товарами</p>
+     */
+    public static function getUsersListByCategory($categoryId, $page = 1)
+    {
+        $limit = User::SHOW_BY_DEFAULT;
+        // Смещение (для запроса)
+        $offset = ($page - 1) * self::SHOW_BY_DEFAULT;
+        $special = Category::getSpecialById($categoryId);
+
+        // Соединение с БД
+        $db = Db::getConnection();
+
+        // Текст запроса к БД
+        $sql = 'SELECT id, name, surname,  age, spec, work_exp, password, email FROM user '
+                . 'WHERE spec = :spec '
+                . 'ORDER BY id ASC LIMIT :limit OFFSET :offset';
+
+        // Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':spec', $special, PDO::PARAM_STR);
+        $result->bindParam(':limit', $limit, PDO::PARAM_INT);
+        $result->bindParam(':offset', $offset, PDO::PARAM_INT);
+
+        // Выполнение коменды
+        $result->execute();
+
+        // Получение и возврат результатов
+        $i = 0;
+        $catsUsers = array();
+        while ($row = $result->fetch()) {
+            $catsUsers[$i]['id'] = $row['id'];
+            $catsUsers[$i]['name'] = $row['name'];
+            $catsUsers[$i]['surname'] = $row['surname'];
+            $catsUsers[$i]['age'] = $row['age'];
+            $catsUsers[$i]['spec'] = $row['spec'];
+            $catsUsers[$i]['work_exp'] = $row['work_exp'];
+            $catsUsers[$i]['password'] = $row['password'];
+            $catsUsers[$i]['email'] = $row['email'];
+            $i++;
+        }
+        return $catsUsers;
+    }
+
+        /**
+     * Возвращаем количество сотрудников в указанной категории
+     * @param integer $categoryId
+     * @return integer
+     */
+    public static function getTotalUsersInCategory($categoryId)
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+
+        // Текст запроса к БД
+        $sql = 'SELECT count(id) AS count FROM product WHERE status="1" AND category_id = :category_id';
+
+        // Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':category_id', $categoryId, PDO::PARAM_INT);
+
+        // Выполнение коменды
+        $result->execute();
+
+        // Возвращаем значение count - количество
+        $row = $result->fetch();
+        return $row['count'];
     }
 
 
