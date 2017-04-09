@@ -24,6 +24,20 @@ class TaskController
         return true;
     }
 
+
+    //ADMIN ADD TASK
+    public function actionAddtask($userId) {
+
+        $user = User::getUserById($userId);
+
+        require_once(ROOT . '/views/admin/task_add.php');
+        return true;
+
+
+
+    }
+
+
     
 
 

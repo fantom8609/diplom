@@ -146,6 +146,23 @@ class AdminController
     }
 
 
+        public function actionUpravlenie()
+    {
+        // Проверка доступа
+        //self::checkAdmin();
+
+        //$categoriesList = Category::getCategoriesListAdmin();
+        $users = User::getUsersList();
+
+        // Подключаем вид
+        require_once(ROOT . '/views/admin/upravlenie.php');
+        return true;
+    }
+
+
+
+
+
 
 
     

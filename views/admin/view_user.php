@@ -6,7 +6,6 @@
             <div class="col-sm-3">
                 <div class="left-sidebar">
                     <h5>Выберите категорию сотрудников:</h5>
-
                     <div class="panel-group category-products">
                         <?php foreach ($categoryList as $categoryItem): ?>
                             <div class="panel panel-default">
@@ -25,37 +24,27 @@
              </div>
          </div>
 
-         <div class="col-sm-4 padding-right">
-          
-          <div class="users_list">
 
-              <h5>Сотрудники</h5>
 
-              <?php foreach($categoryUsers as $userItem): ?>
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a href="/user/<?php echo $userItem['id'];?>" 
-                              class="<?php if($categoryId==$userItem['id']) echo 'active';?>">
-                              <?php echo $userItem['name']." ".$userItem['surname'];?> <br>
-                              Специализация: <?php echo $userItem['spec'];?> <br>
-                              Рабочий стаж: <?php echo $userItem['work_exp'];?> мес.  <br>
-                              Email: <?php echo $userItem['email'];?>
-                          </a>
 
-                      </h4>
-                      <a href="/admin/task/add/<?php echo $userItem['id'];?>">Добавить задачу</a> <br>
-                      <a href="">Задачи сотрудника</a>
+         <div class="col-sm-9 padding-right">
+           
+                    <div class="col-sm-7">
+                    <h5>Информация о сотруднике</h5>
+                        
+                          <p>Имя: <?php echo $user['name']; ?></p>
+                          <p>Фамилия: <?php echo $user['surname']; ?></p>
+                          <p>Возраст: <?php echo $user['age']; ?></p>
+                          <p>Специализация: <?php echo $user['spec']; ?></p>
+                          <p>Рабочий стаж: <?php echo $user['work_exp']; ?> .мес</p>
+                          <p>Email: <?php echo $user['email']; ?></p>
+                         
+                      
                   </div>
-              </div>
 
-          <?php endforeach; ?>
       </div>
-      
   </div>
-</div>
-
 </div>
 </section>
 

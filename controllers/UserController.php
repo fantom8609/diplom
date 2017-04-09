@@ -147,9 +147,30 @@ class UserController
     }
 
         /**
-     * Action для страницы просмотра данных о пользователе
+     * Action для страницы просмотра товара
      * @param integer $productId <p>id товара</p>
      */
+    public function actionView($userId)
+    {
+        $user = User::getUserById($userId);
+        $categoryList = Category::getCategoriesListAdmin();
+
+        // Подключаем вид
+        require_once(ROOT . '/views/admin/view_user.php');
+        
+        return true;
+    }
+
+    public function actionEdit($userId) {
+
+        require_once(ROOT . '/views/admin/edit_user.php');
+        
+        return true;
+
+
+    }
+
+
 
 
     

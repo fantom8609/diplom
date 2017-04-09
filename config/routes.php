@@ -41,8 +41,20 @@ return array(
     'contacts' => 'site/contact',
     'about' => 'site/about',
     */
-    
 
+
+    //редактирование пользователя
+    'admin/edit/user/([0-9]+)' => 'user/edit/$1',
+
+    //добавить задачу
+    'admin/task/add/([0-9]+)' => 'task/addtask/$1',
+
+    
+    //управление аккаунтами
+    'admin/upravlenie' => 'admin/upravlenie',
+    
+    //показать данные пользователя
+    'user/([0-9]+)' => 'user/view/$1',
 
     //Вывести сотрудника по категории
      'category/([0-9]+)' => 'category/category/$1', // actionCategory в CategoryController   

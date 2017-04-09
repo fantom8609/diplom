@@ -4,3 +4,11 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/fantom8609/diplom.git
 git push -u origin master
+
+
+
+
+
+
+Источники:
+http://dnzl.ru/view_post.php%3Fid%3D198

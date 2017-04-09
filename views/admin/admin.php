@@ -18,6 +18,7 @@
                                           <?php echo $categoryItem['name'];?>
                                       </a>
                                   </h4>
+
                               </div>
                           </div>
 
@@ -31,7 +32,7 @@
           <div class="col-sm-4 padding-right">
 
               <div class="users_list">
-
+                 <h5>Сотрудники</h5>
                 <?php foreach($users as $user): ?>
 
                     <div class="panel panel-default">
@@ -45,6 +46,9 @@
                                   Email: <?php echo $user['email'];?>
                               </a>
                           </h4>
+                          <a href="/admin/task/add/<?php echo $user['id'];?>">Добавить задачу</a> <br>
+                          <a href="">Задачи сотрудника</a>
+
                       </div>
                   </div>
 
