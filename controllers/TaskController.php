@@ -25,12 +25,13 @@ class TaskController
     }
 
 
-    //ADMIN ADD TASK
-    public function actionAddtask($userId) {
-
+    public function actionTasksofuser($userId) {
         $user = User::getUserById($userId);
 
-        require_once(ROOT . '/views/admin/task_add.php');
+        $tasks = Task::getTasksByUserId($userId);
+
+
+        require_once(ROOT . '/views/admin/view_tasks_of_user.php');
         return true;
 
 
@@ -38,7 +39,50 @@ class TaskController
     }
 
 
-    
+
+
+
+    //ADMIN ADD TASK
+    public function actionAddtask($userId) {
+
+        $user = User::getUserById($userId);
+
+        // Переменные для формы
+        $title = false;
+        $coment = false;
+        $upload = false;
+
+        // Обработка формы
+        if (isset($_POST['submit'])) {
+            // Если форма отправлена 
+            // Получаем данные из формы
+            $title = $_POST['title'];
+            $coment = $_POST['coment'];
+           // $upload = $_FILES["uploaded_file"]["tmp_name"];
+
+            $upload_name = $_FILES["uploaded_file"]["name"];
+            $path_in_project = $_SERVER['DOCUMENT_ROOT']."/upload/{$upload_name}";
+            
+          
+           //добавим задачу и получим ее айди
+            $id = Task::createTaskByUserId($userId,$title,$coment,$path_in_project);
+
+                // Если запись добавлена
+            if ($id) {
+                    // Проверим, загружалось ли через форму file
+                if (is_uploaded_file($_FILES["uploaded_file"]["tmp_name"])) {
+                        // Если загружалось, переместим его в нужную папке, дадим новое имя
+                    move_uploaded_file($_FILES["uploaded_file"]["tmp_name"], $path_in_project);
+                }
+            };
+        }
+        require_once(ROOT . '/views/admin/task_add.php');
+        return true;
+    }
+
+
+
+
 
 
 

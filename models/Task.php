@@ -36,8 +36,8 @@ class Task
      * @param integer $id <p>id товара</p>
      * @return array <p>Массив с информацией о задаче</p>
      */
-    public static function getTaskById($id)
-    {
+      public static function getTaskById($id)
+      {
         // Соединение с БД
         $db = Db::getConnection();
 
@@ -57,6 +57,97 @@ class Task
         // Получение и возврат результатов
         return $result->fetch();
     }
+
+    public static function addTaskByUserId($user_id) {
+
+        // Соединение с БД
+        $db = Db::getConnection();
+
+        // Текст запроса к БД
+        $sql = 'INSERT INTO task (title, coment, status, user_id, upload) '
+        . 'VALUES (:title, :coment, :status, :user_id, :upload)';
+
+        // Получение и возврат результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':title', $title, PDO::PARAM_STR);
+        $result->bindParam(':coment', $coment, PDO::PARAM_STR);
+        $result->bindParam(':status', $status, PDO::PARAM_INT);
+        $result->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+        $result->bindParam(':upload', $upload, PDO::PARAM_STR);
+        return $result->execute();
+    }
+
+
+
+
+    public static function getTasksByUserId($user_id) {
+         // Соединение с БД
+        $db = Db::getConnection();
+
+        // Запрос к БД
+        $sql = 'SELECT id, title, coment, status, upload FROM task WHERE user_id = :user_id ORDER BY id ASC ';
+        
+        // Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+        //выполнение запроса
+        $result->execute();
+
+        // Получение и возврат результатов
+        $tasks = array();
+        $i = 0;
+        while ($row = $result->fetch()) {
+            $tasks[$i]['id'] = $row['id'];
+            $tasks[$i]['title'] = $row['title'];
+            $tasks[$i]['coment'] = $row['coment'];
+            $tasks[$i]['upload'] = $row['upload'];
+            $i++;
+        }
+        return $tasks;
+    }
+
+
+
+
+
+
+
+    /**
+     * Добавляет новый товар
+     * @param array $options <p>Массив с информацией о товаре</p>
+     * @return integer <p>id добавленной в таблицу записи</p>
+     */
+    public static function createTaskByUserId($userId,$title,$coment,$upload)
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+        $status="1";
+
+        // Текст запроса к БД
+        $sql = 'INSERT INTO task (title, coment, status, user_id, upload) '
+        . 'VALUES (:title, :coment, :status, :user_id, :upload)';
+
+        // Получение и возврат результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':title', $title, PDO::PARAM_STR);
+        $result->bindParam(':coment', $coment, PDO::PARAM_STR);
+        $result->bindParam(':status', $status, PDO::PARAM_INT);
+        $result->bindParam(':user_id', $userId, PDO::PARAM_INT);
+        $result->bindParam(':upload', $upload, PDO::PARAM_STR);
+        
+
+        if ($result->execute()) {
+            // Если запрос выполенен успешно, возвращаем id добавленной записи
+            return $db->lastInsertId();
+
+        }
+
+        // Иначе возвращаем 0
+        return 0;
+    }
+
+
+
 
     /**
      * Возвращает массив категорий для списка в админпанели <br/>
@@ -118,11 +209,11 @@ class Task
 
         // Текст запроса к БД
         $sql = "UPDATE category
-            SET 
-                name = :name, 
-                sort_order = :sort_order, 
-                status = :status
-            WHERE id = :id";
+        SET 
+        name = :name, 
+        sort_order = :sort_order, 
+        status = :status
+        WHERE id = :id";
 
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
@@ -145,11 +236,11 @@ class Task
     {
         switch ($status) {
             case '1':
-                return 'Отображается';
-                break;
+            return 'Отображается';
+            break;
             case '0':
-                return 'Скрыта';
-                break;
+            return 'Скрыта';
+            break;
         }
     }
 
@@ -167,7 +258,7 @@ class Task
 
         // Текст запроса к БД
         $sql = 'INSERT INTO category (name, sort_order, status) '
-                . 'VALUES (:name, :sort_order, :status)';
+        . 'VALUES (:name, :sort_order, :status)';
 
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
@@ -176,5 +267,18 @@ class Task
         $result->bindParam(':status', $status, PDO::PARAM_INT);
         return $result->execute();
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

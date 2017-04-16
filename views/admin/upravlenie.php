@@ -21,12 +21,15 @@
  									Пароль: <?php echo $user['password'];?>
  							</h4>
  							<a href="/admin/edit/user/<?php echo $user['id'];?>">Редактировать</a> <br>	
- 							<a href="">Удалить</a>
+ 							<a href="/admin/delete/user/<?php echo $user['id'];?>">Удалить</a>
+
 
  						</div>
  					</div>
-
+ 	
  				<?php endforeach; ?>
+
+
  			</div>
 
  		</div>

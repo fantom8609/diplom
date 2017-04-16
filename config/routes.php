@@ -42,6 +42,11 @@ return array(
     'about' => 'site/about',
     */
 
+    //вывод задач пользователя
+    'admin/tasks/([0-9]+)' => 'task/tasksofuser/$1',
+
+    //удаление пользователя
+    'admin/delete/user/([0-9]+)' => 'user/delete/$1',
 
     //редактирование пользователя
     'admin/edit/user/([0-9]+)' => 'user/edit/$1',

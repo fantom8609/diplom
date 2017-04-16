@@ -161,14 +161,81 @@ class UserController
         return true;
     }
 
+
+
     public function actionEdit($userId) {
 
+        $user = User::getUserById($userId);
+
+        // Переменные для формы
+        $name = false;
+        $surname = false;
+        $age = false;
+        $spec = false;
+        $work_exp = false;
+        $password = false;
+        $email = false;
+
+        $result = false;
+
+        // Обработка формы
+        if (isset($_POST['submit'])) {
+            // Если форма отправлена 
+            // Получаем данные из формы
+            $name = $_POST['name'];
+            $surname = $_POST['surname'];
+            $age = $_POST['age'];
+            $spec = $_POST['spec'];
+            $work_exp = $_POST['work_exp'];
+            $password = $_POST['password'];
+            
+            $email = $_POST['email'];
+            
+
+            // Флаг ошибок
+            $errors = false;
+
+            // Валидация полей
+            if (!User::checkName($name)) {
+                $errors[] = 'Имя не должно быть короче 2-х символов';
+            }
+             if (!User::checkName($surname)) {
+                $errors[] = 'Фамилия не должна быть короче 2-х символов';
+            }
+            if (!User::checkEmail($email)) {
+                $errors[] = 'Неправильный email';
+            }
+            if (!User::checkPassword($password)) {
+                $errors[] = 'Пароль не должен быть короче 6-ти символов';
+            }
+            
+           
+
+            if ($errors == false) {
+                // Если ошибок нет
+                // Регистрируем пользователя
+             
+                $result = User::edit($userId,$name, $surname, $age, $spec, $work_exp, $password, $email);
+               
+             }
+        }
         require_once(ROOT . '/views/admin/edit_user.php');
         
         return true;
 
-
     }
+
+
+     public function actionDelete($userId) {
+
+     
+            User::deleteUserById($userId);
+
+            // Перенаправляем пользователя на страницу управлениями товарами
+            header("Location: /admin/upravlenie");
+        }
+
+     
 
 
 

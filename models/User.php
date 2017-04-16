@@ -44,21 +44,44 @@ class User
      * @param string $password <p>Пароль</p>
      * @return boolean <p>Результат выполнения метода</p>
      */
-    public static function edit($id, $name, $password)
+    public static function edit($id,$name, $surname, $age, $spec, $work_exp, $password, $email)
     {
         // Соединение с БД
         $db = Db::getConnection();
 
         // Текст запроса к БД
         $sql = "UPDATE user 
-            SET name = :name, password = :password 
+            SET name = :name, surname = :surname, age = :age, spec = :spec, work_exp = :work_exp, password = :password,
+            email = :email  
             WHERE id = :id";
 
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':id', $id, PDO::PARAM_INT);
         $result->bindParam(':name', $name, PDO::PARAM_STR);
+        $result->bindParam(':surname', $surname, PDO::PARAM_STR);
+        $result->bindParam(':age', $age, PDO::PARAM_INT);
+        $result->bindParam(':spec', $spec, PDO::PARAM_STR);
+        $result->bindParam(':work_exp', $work_exp, PDO::PARAM_INT);
         $result->bindParam(':password', $password, PDO::PARAM_STR);
+        $result->bindParam(':email', $email, PDO::PARAM_STR);
+        return $result->execute();
+    }
+
+
+
+
+    public static function deleteUserById($id)
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+
+        // Текст запроса к БД
+        $sql = 'DELETE FROM user WHERE id = :id';
+
+        // Получение и возврат результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':id', $id, PDO::PARAM_INT);
         return $result->execute();
     }
 
