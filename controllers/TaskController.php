@@ -25,7 +25,26 @@ class TaskController
     }
 
 
+    /**
+     * Action для страницы просмотра товара
+     * @param integer $productId <p>id товара</p>
+     */
+    public function actionAdminviewtask($taskId)
+    {
+        // Список категорий для левого меню
+        $tasks = Task::getTasksList();
+
+        // Получаем инфомрацию о задаче
+        $task = Task::getTaskById($taskId);
+
+        // Подключаем вид
+        require_once(ROOT . '/views/admin/task_view.php');
+        return true;
+    }
+
+
     public function actionTasksofuser($userId) {
+
         $user = User::getUserById($userId);
 
         $tasks = Task::getTasksByUserId($userId);
@@ -79,6 +98,34 @@ class TaskController
         require_once(ROOT . '/views/admin/task_add.php');
         return true;
     }
+
+
+
+     /**
+     * Action для добавления товара в корзину при помощи асинхронного запроса (ajax)
+     * @param integer $id <p>id товара</p>
+     */
+    public function actionSetCompletedAjax($taskId)
+    {
+        // Добавляем товар в корзину и печатаем результат: количество товаров в корзине
+        Task::changeTasksStatusToCompleted($taskId);
+        return true;
+    }
+
+     public function actionSetFailedAjax($taskId)
+    {
+        // Добавляем товар в корзину и печатаем результат: количество товаров в корзине
+        Task::changeTasksStatusToFailed($taskId);
+        return true;
+    }
+
+       public function actionDeleteAjax($taskId)
+    {
+        // Добавляем товар в корзину и печатаем результат: количество товаров в корзине
+        Task::deleteTaskById($taskId);
+        return true;
+    }
+
 
 
 

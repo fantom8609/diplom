@@ -106,6 +106,63 @@ class Task
         return $tasks;
     }
 
+// Изменение статусов задач
+    public static function changeTasksStatusToCompleted($taskId) {
+
+        $db = Db::getConnection();
+        $status = "2";
+
+        // Текст запроса к БД
+        $sql = "UPDATE task
+        SET 
+        status = :status 
+        WHERE id = :id";
+
+        // Получение и возврат результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':id', $taskId, PDO::PARAM_INT);
+        $result->bindParam(':status', $status, PDO::PARAM_INT);
+        return $result->execute();
+    }
+
+
+        public static function changeTasksStatusToFailed($taskId) {
+
+        $db = Db::getConnection();
+        $status = "3";
+
+        // Текст запроса к БД
+        $sql = "UPDATE task
+        SET 
+        status = :status 
+        WHERE id = :id";
+
+        // Получение и возврат результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':id', $taskId, PDO::PARAM_INT);
+        $result->bindParam(':status', $status, PDO::PARAM_INT);
+        return $result->execute();
+
+    }
+
+
+        public static function deleteTaskById($id)
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+
+        // Текст запроса к БД
+        $sql = 'DELETE FROM task WHERE id = :id';
+
+        // Получение и возврат результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':id', $id, PDO::PARAM_INT);
+        return $result->execute();
+    }
+
+
+
+
 
 
 
@@ -146,6 +203,27 @@ class Task
         return 0;
     }
 
+
+    /**
+     * Возвращает текстое пояснение статуса для категории :<br/>
+     * <i>0 - Скрыта, 1 - Отображается</i>
+     * @param integer $status <p>Статус</p>
+     * @return string <p>Текстовое пояснение</p>
+     */
+    public static function getStatusTask($status)
+    {
+        switch ($status) {
+            case '1':
+            return 'Выполняется';
+            break;
+            case '2':
+            return 'Выполнено';
+            break;
+            case '3':
+            return 'Провалено';
+            break;
+        }
+    }
 
 
 

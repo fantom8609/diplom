@@ -42,7 +42,17 @@ return array(
     'about' => 'site/about',
     */
 
-    //вывод задач пользователя
+    //установка выолненного статуса задаче
+    'admin/task/setCompleted/([0-9]+)' => 'task/setCompletedAjax/$1',
+    'admin/task/setFailed/([0-9]+)' => 'task/setFailedAjax/$1',
+     
+
+
+    //информация о задаче у админа
+    'admin/task/([0-9]+)' => 'task/Adminviewtask/$1',
+
+
+    //вывод задач пользователя 
     'admin/tasks/([0-9]+)' => 'task/tasksofuser/$1',
 
     //удаление пользователя

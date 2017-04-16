@@ -4,10 +4,7 @@
 <footer id="footer" class="page-footer"><!--Footer-->
     <div class="footer-bottom">
         <div class="container">
-            <div class="row">
-                <p class="pull-left">Copyright © 2015</p>
-                <p class="pull-right">Курс PHP Start</p>
-            </div>
+
         </div>
     </div>
 </footer><!--/Footer-->
@@ -24,13 +21,32 @@
 <script src="/template/js/main.js"></script>
 <script>
     $(document).ready(function(){
-        $(".add-to-cart").click(function () {
+        //задача выполнена
+        $(".change-status-complete").click(function () {
             var id = $(this).attr("data-id");
-            $.post("/cart/addAjax/"+id, {}, function (data) {
-                $("#cart-count").html(data);
+            $.post("/admin/task/setCompleted/"+id, {}, function (data) {
+                $("#status-task").html(data);
             });
             return false;
         });
+
+        //задача провалена
+        $(".change-status-failed").click(function () {
+            var id = $(this).attr("data-id");
+            $.post("/admin/task/setFailed/"+id, {}, function (data) {
+                $("#status-task").html(data);
+            });
+            return false;
+        });
+        //задача удалена
+        $(".task-delete").click(function () {
+            var id = $(this).attr("data-id");
+            $.post("/admin/task/delete/"+id, {}, function (data) {
+                $("#status-task").html(data);
+            });
+            return false;
+        });
+
     });
 </script>
 

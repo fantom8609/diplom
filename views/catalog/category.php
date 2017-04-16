@@ -46,7 +46,7 @@
 
                       </h4>
                       <a href="/admin/task/add/<?php echo $userItem['id'];?>">Добавить задачу</a> <br>
-                      <a href="">Задачи сотрудника</a>
+                      <a href="/admin/tasks/<?php echo $userItem['id'];?>">Задачи сотрудника</a>
                   </div>
               </div>
 

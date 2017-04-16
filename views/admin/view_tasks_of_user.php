@@ -10,7 +10,7 @@
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a href="/task/<?php echo $task['id'];?>">
+                <a href="/admin/task/<?php echo $task['id'];?>">
                   <?php echo $task['title'];?>
                 </a>
               </h4>
