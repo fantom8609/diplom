@@ -38,6 +38,14 @@
             });
             return false;
         });
+           //задача активирована
+        $(".change-status-activate").click(function () {
+            var id = $(this).attr("data-id");
+            $.post("/admin/task/activate/"+id, {}, function (data) {
+                $("#status-task").html(data);
+            });
+            return false;
+        });
         //задача удалена
         $(".task-delete").click(function () {
             var id = $(this).attr("data-id");

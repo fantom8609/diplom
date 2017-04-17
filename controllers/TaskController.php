@@ -108,14 +108,17 @@ class TaskController
     public function actionSetCompletedAjax($taskId)
     {
         // Добавляем товар в корзину и печатаем результат: количество товаров в корзине
-        Task::changeTasksStatusToCompleted($taskId);
+        $status = Task::changeTasksStatusToCompleted($taskId);
+        echo Task::getStatusTask($status);
+        
         return true;
     }
 
      public function actionSetFailedAjax($taskId)
     {
         // Добавляем товар в корзину и печатаем результат: количество товаров в корзине
-        Task::changeTasksStatusToFailed($taskId);
+        $status =Task::changeTasksStatusToFailed($taskId);
+        echo Task::getStatusTask($status);
         return true;
     }
 
@@ -123,6 +126,15 @@ class TaskController
     {
         // Добавляем товар в корзину и печатаем результат: количество товаров в корзине
         Task::deleteTaskById($taskId);
+        return true;
+    }
+
+
+        public function actionActivateAjax($taskId)
+    {
+        // Добавляем товар в корзину и печатаем результат: количество товаров в корзине
+        $status =Task::changeTasksStatusToActive($taskId);
+        echo Task::getStatusTask($status);
         return true;
     }
 

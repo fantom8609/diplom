@@ -45,6 +45,9 @@ return array(
     //установка выолненного статуса задаче
     'admin/task/setCompleted/([0-9]+)' => 'task/setCompletedAjax/$1',
     'admin/task/setFailed/([0-9]+)' => 'task/setFailedAjax/$1',
+    'admin/task/activate/([0-9]+)' => 'task/activateAjax/$1',
+    'admin/task/delete/([0-9]+)' => 'task/deleteAjax/$1',
+
      
 
 

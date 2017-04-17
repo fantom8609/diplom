@@ -122,11 +122,12 @@ class Task
         $result = $db->prepare($sql);
         $result->bindParam(':id', $taskId, PDO::PARAM_INT);
         $result->bindParam(':status', $status, PDO::PARAM_INT);
-        return $result->execute();
+        $result->execute();
+        return $status;
     }
 
 
-        public static function changeTasksStatusToFailed($taskId) {
+    public static function changeTasksStatusToFailed($taskId) {
 
         $db = Db::getConnection();
         $status = "3";
@@ -141,12 +142,34 @@ class Task
         $result = $db->prepare($sql);
         $result->bindParam(':id', $taskId, PDO::PARAM_INT);
         $result->bindParam(':status', $status, PDO::PARAM_INT);
-        return $result->execute();
+        $result->execute();
+        return $status;
 
     }
 
 
-        public static function deleteTaskById($id)
+    public static function changeTasksStatusToActive($taskId) {
+
+        $db = Db::getConnection();
+        $status = "1";
+
+        // Текст запроса к БД
+        $sql = "UPDATE task
+        SET 
+        status = :status 
+        WHERE id = :id";
+
+        // Получение и возврат результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':id', $taskId, PDO::PARAM_INT);
+        $result->bindParam(':status', $status, PDO::PARAM_INT);
+        $result->execute();
+        return $status;
+
+    }
+
+
+    public static function deleteTaskById($id)
     {
         // Соединение с БД
         $db = Db::getConnection();
@@ -302,25 +325,6 @@ class Task
         return $result->execute();
     }
 
-    
-
-    /**
-     * Возвращает текстое пояснение статуса для категории :<br/>
-     * <i>0 - Скрыта, 1 - Отображается</i>
-     * @param integer $status <p>Статус</p>
-     * @return string <p>Текстовое пояснение</p>
-     */
-    public static function getStatusText($status)
-    {
-        switch ($status) {
-            case '1':
-            return 'Отображается';
-            break;
-            case '0':
-            return 'Скрыта';
-            break;
-        }
-    }
 
     /**
      * Добавляет новую категорию
