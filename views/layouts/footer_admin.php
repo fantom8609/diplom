@@ -50,7 +50,7 @@
         $(".task-delete").click(function () {
             var id = $(this).attr("data-id");
             $.post("/admin/task/delete/"+id, {}, function (data) {
-                $("#status-task").html(data);
+                $("#deleted-task").html(data);
             });
             return false;
         });

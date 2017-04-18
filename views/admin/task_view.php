@@ -1,6 +1,7 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 <?php include ROOT . '/views/layouts/main_menu_admin.php'; ?>
 
+
 <section>
     <div class="container">
         <div class="row">
@@ -9,7 +10,13 @@
                 <div class="product-details"><!--product-details-->
                     <div class="row">
                         <div class="col-sm-7">
-                            <div class="product-information"><!--/product-information-->
+                            <?php if(!isset($task)): ?>
+                                <a href="<?php echo $_SERVER['HTTP_REFERER']; ?>">вернуться к списку задач</a>
+                            <?php endif;?>
+
+
+                            <div class="product-information" id="deleted-task">
+
                                 <h2><?php echo $task['title']; ?></h2>
                                 <p>Комментарий: <?php echo $task['coment']; ?></p>
                                 

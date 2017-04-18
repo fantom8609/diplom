@@ -41,6 +41,8 @@ return array(
     'contacts' => 'site/contact',
     'about' => 'site/about',
     */
+     
+
 
     //установка выолненного статуса задаче
     'admin/task/setCompleted/([0-9]+)' => 'task/setCompletedAjax/$1',

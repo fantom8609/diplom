@@ -1,0 +1,5 @@
+﻿addDefaultCharset utf-8
+
+RewriteEngine on
+RewriteBase /patterns/
+RewriteRule ^(.*)$ index.php

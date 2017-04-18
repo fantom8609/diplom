@@ -16,7 +16,7 @@ class Admin
 
         // Текст запроса к БД
         $sql = 'INSERT INTO admin (email,password) '
-                . 'VALUES (:email, :password)';
+        . 'VALUES (:email, :password)';
 
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
@@ -26,7 +26,7 @@ class Admin
     }
 
 
-        public static function checkUserData($email, $password)
+    public static function checkUserData($email, $password)
     {
         // Соединение с БД
         $db = Db::getConnection();
@@ -51,13 +51,13 @@ class Admin
     }
 
 
-      public static function auth($adminId)
+    public static function auth($adminId)
     {
         // Записываем идентификатор admina в сессию
         $_SESSION['admin'] = $adminId;
     }
 
-       public static function checkLogged()
+    public static function checkLogged()
     {
         // Если сессия есть, вернем идентификатор пользователя
         if (isset($_SESSION['admin'])) {
@@ -72,24 +72,57 @@ class Admin
      * Возвращает массив категорий для списка на сайте
      * @return array <p>Массив с категориями</p>
      */
-    public static function getCategoriesList()
-    {
+        public static function getCategoriesList()
+        {
         // Соединение с БД
-        $db = Db::getConnection();
+            $db = Db::getConnection();
 
         // Запрос к БД
-        $result = $db->query('SELECT id, name FROM category');
+            $result = $db->query('SELECT id, name FROM category');
 
         // Получение и возврат результатов
-        $i = 0;
-        $categoryList = array();
-        while ($row = $result->fetch()) {
-            $categoryList[$i]['id'] = $row['id'];
-            $categoryList[$i]['name'] = $row['name'];
-            $i++;
+            $i = 0;
+            $categoryList = array();
+            while ($row = $result->fetch()) {
+                $categoryList[$i]['id'] = $row['id'];
+                $categoryList[$i]['name'] = $row['name'];
+                $i++;
+            }
+            return $categoryList;
         }
-        return $categoryList;
+
+
+
+        public static function search($words) {
+
+            $words = htmlspecialchars($words);
+            if ($words === "") return false;
+            $query_search = "";
+            $arraywords = explode(" ",$words);
+            foreach ($arraywords as $key => $value) {
+                if (isset($arraywords[$key-1])) {
+                    $query_search .= ' OR ';
+                }
+                $query_search .= 'name LIKE "%'.$value.'%" OR surname LIKE "%'.$value.'%"';
+            }
+            $query = "SELECT * FROM user WHERE $query_search";
+            $db = Db::getConnection();
+
+            $result_set = $db->query($query);
+            $results = array();
+            $i = 0;
+            while ($row = $result_set->fetch()) {
+                $results['name'] = $row['name'];
+                $results['surname'] = $row['surname'];
+                $results['age'] = $row['age'];
+                $results['spec'] = $row['spec'];
+                $results['work_exp'] = $row['work_exp'];
+                $results['email'] = $row['email'];
+                $results['password'] = $row['password'];
+                $i++;
+            }
+            return $results;
+        }
+
+
     }
-
-
-}

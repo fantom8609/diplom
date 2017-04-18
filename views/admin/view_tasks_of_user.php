@@ -5,7 +5,12 @@
     <div class="row">
       <div class="col-sm-4">
 
-      <?php foreach($tasks as $task): ?>
+        <?php if(empty($tasks)): ?>
+          <p>Задач у сотрудника <?php echo $user['name']." ".$user['surname']; ?> нет</p> 
+          <a href="/admin/index.php">Вернуться к списку сотрудников</a>
+        <?php endif; ?>
+
+        <?php foreach($tasks as $task): ?>
 
           <div class="panel panel-default">
             <div class="panel-heading">

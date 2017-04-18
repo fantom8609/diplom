@@ -151,6 +151,7 @@ class AdminController
         // Проверка доступа
         //self::checkAdmin();
 
+        
         //$categoriesList = Category::getCategoriesListAdmin();
         $users = User::getUsersList();
 
@@ -158,6 +159,22 @@ class AdminController
         require_once(ROOT . '/views/admin/upravlenie.php');
         return true;
     }
+
+
+   /* public function actionSearch() {
+
+        if (isset($_POST['bsearch'])) {
+            $words = $_POST['words'];
+        }
+
+        $result = Admin::search($words);
+
+
+
+        require_once(ROOT . '/views/admin/upravlenie.php');
+        return true;
+
+    }*/
 
 
 

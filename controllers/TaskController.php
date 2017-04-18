@@ -126,6 +126,9 @@ class TaskController
     {
         // Добавляем товар в корзину и печатаем результат: количество товаров в корзине
         Task::deleteTaskById($taskId);
+        $task = Task::getTaskById($taskId);
+        
+        echo "Задача удалена";
         return true;
     }
 
