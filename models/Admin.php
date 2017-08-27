@@ -112,13 +112,8 @@ class Admin
             $results = array();
             $i = 0;
             while ($row = $result_set->fetch()) {
-                $results['name'] = $row['name'];
-                $results['surname'] = $row['surname'];
-                $results['age'] = $row['age'];
-                $results['spec'] = $row['spec'];
-                $results['work_exp'] = $row['work_exp'];
-                $results['email'] = $row['email'];
-                $results['password'] = $row['password'];
+                $results[$i] = $row;
+
                 $i++;
             }
             return $results;
