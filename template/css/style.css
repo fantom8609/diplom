@@ -25,3 +25,10 @@
 #header a:first-child {
 	float: right;
 }
+
+.arrow_toggle {
+    color: red;
+}
+.visible_cont a {
+    color: green;
+}

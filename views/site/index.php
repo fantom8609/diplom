@@ -26,7 +26,7 @@
 
                     <div class="panel-group category-tests">Выполненные:
                         <?php foreach ($tasks as $taskItem): ?>
-                            <?php if($taskItem['status']==0): ?>
+                            <?php if($taskItem['status']==3): ?>
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">

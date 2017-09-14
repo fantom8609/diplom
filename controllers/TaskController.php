@@ -51,6 +51,7 @@ class TaskController
 
 
         require_once(ROOT . '/views/admin/view_tasks_of_user.php');
+        require_once(ROOT . '/views/site/index.php');
         return true;
 
 
@@ -138,6 +139,21 @@ class TaskController
         // Добавляем товар в корзину и печатаем результат: количество товаров в корзине
         $status =Task::changeTasksStatusToActive($taskId);
         echo Task::getStatusTask($status);
+        return true;
+    }
+    
+    public function actionMarkAjax($taskId)
+    {
+        $difficultly = $_POST['difficultly'];
+        $work_cost = $_POST['work_cost'];
+        $coef_working = $_POST['coef_working'];
+        if (!Task::checkMark($difficultly, $work_cost, $coef_working)) {
+            echo "Ошибка при вводе данных";
+        }
+        else {
+        Task::setMark($taskId,$difficultly,$work_cost,$coef_working);
+        echo "Данные успешно сохранены";
+        }
         return true;
     }
 

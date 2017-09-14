@@ -49,6 +49,9 @@ return array(
     'admin/task/setFailed/([0-9]+)' => 'task/setFailedAjax/$1',
     'admin/task/activate/([0-9]+)' => 'task/activateAjax/$1',
     'admin/task/delete/([0-9]+)' => 'task/deleteAjax/$1',
+    
+    //оценка задачи
+    'admin/task/mark/([0-9]+)' => 'task/markAjax/$1',
 
      
 
@@ -72,6 +75,17 @@ return array(
     
     //управление аккаунтами
     'admin/upravlenie' => 'admin/upravlenie',
+    
+    //рейтинг сотрудников
+    'admin/rating' => 'admin/rating',
+    
+    //статистика сотрудников
+    'admin/statistic' => 'admin/statistic',
+    
+    //настройки сайта
+    'admin/settings' => 'admin/settings',
+    
+    
     
     //показать данные пользователя
     'user/([0-9]+)' => 'user/view/$1',
@@ -107,5 +121,5 @@ return array(
 
     // Главная страница
     'index.php' => 'site/index', // actionIndex в SiteController
-    '' => 'site/index', // actionIndex в SiteController
+    '' => 'site/index/$1', // actionIndex в SiteController
 );

@@ -12,11 +12,10 @@ class SiteController
     public function actionIndex()
     {
 
-        // Список категорий для левого меню
+        // Берем из сессии айди пользователя
+        $userId = $_SESSION['user'];
     
-
-
-        $tasks = Task::getTasksList();
+        $tasks = Task::getTasksByUserId($userId);
 
        // if (empty($_SESSION['admin'])) {header("Location: /admin/login");}
 

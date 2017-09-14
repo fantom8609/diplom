@@ -101,6 +101,8 @@ class Task
             $tasks[$i]['title'] = $row['title'];
             $tasks[$i]['coment'] = $row['coment'];
             $tasks[$i]['upload'] = $row['upload'];
+            $tasks[$i]['status'] = $row['status'];
+            
             $i++;
         }
         return $tasks;
@@ -347,20 +349,38 @@ class Task
         $result->bindParam(':name', $name, PDO::PARAM_STR);
         $result->bindParam(':sort_order', $sortOrder, PDO::PARAM_INT);
         $result->bindParam(':status', $status, PDO::PARAM_INT);
+        $result->execute();
+    }
+    
+    
+    // оценка
+     public static function setMark($taskId, $difficultly, $work_cost, $coef_working) {
+
+        $db = Db::getConnection();
+         // Текст запроса к БД
+        $sql = "UPDATE task
+        SET 
+        difficultly = :difficultly, 
+        work_cost = :work_cost, 
+        coef_working = :coef_working
+        WHERE id = :id";
+
+        // Получение и возврат результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':id', $taskId, PDO::PARAM_INT);
+        $result->bindParam(':difficultly', $difficultly, PDO::PARAM_INT);
+        $result->bindParam(':work_cost', $work_cost, PDO::PARAM_INT);
+        $result->bindParam(':coef_working', $coef_working, PDO::PARAM_INT);
         return $result->execute();
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    public static function checkMark($difficultly, $work_cost, $coef_working) {
+        if (filter_var($difficultly, FILTER_VALIDATE_FLOAT) && 
+                filter_var($work_cost, FILTER_VALIDATE_FLOAT)&& 
+                filter_var($coef_working, FILTER_VALIDATE_FLOAT) ) {
+            return true;
+        }
+        return false;
+    }
 
 }

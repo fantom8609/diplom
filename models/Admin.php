@@ -113,7 +113,6 @@ class Admin
             $i = 0;
             while ($row = $result_set->fetch()) {
                 $results[$i] = $row;
-
                 $i++;
             }
             return $results;

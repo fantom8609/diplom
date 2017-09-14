@@ -18,7 +18,10 @@
 <script src="/template/js/jquery.scrollUp.min.js"></script>
 <script src="/template/js/price-range.js"></script>
 <script src="/template/js/jquery.prettyPhoto.js"></script>
+<script src="/template/js/motionpack.js"></script>
 <script src="/template/js/main.js"></script>
+
+
 <script>
     $(document).ready(function(){
         //задача выполнена
@@ -54,6 +57,22 @@
             });
             return false;
         });
+        
+           //задача оценена
+           $(".marked").click(function () {
+            var id = $(this).attr("data-id");
+            $.post("/admin/task/mark/"+id, {
+                difficultly: $('[name="difficultly"]').val(),
+                work_cost: $('[name="work_cost"]').val(),
+                coef_working: $('[name="coef_working"]').val()
+            }, function (data) {
+                $("#marked-result").html(data);
+            });
+            return false;
+        });
+   
+       
+
 
     });
 </script>

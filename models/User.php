@@ -141,18 +141,6 @@ class User
     }
 
     /**
-     * Проверяет является ли пользователь гостем
-     * @return boolean <p>Результат выполнения метода</p>
-     */
-    public static function isGuest()
-    {
-        if (isset($_SESSION['user'])) {
-            return false;
-        }
-        return true;
-    }
-
-    /**
      * Проверяет имя: не меньше, чем 2 символа
      * @param string $name <p>Имя</p>
      * @return boolean <p>Результат выполнения метода</p>

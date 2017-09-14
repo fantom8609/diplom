@@ -150,13 +150,34 @@ class AdminController
     {
         // Проверка доступа
         //self::checkAdmin();
-
-        
         //$categoriesList = Category::getCategoriesListAdmin();
         $users = User::getUsersList();
 
         // Подключаем вид
         require_once(ROOT . '/views/admin/upravlenie.php');
+        return true;
+    }
+    
+    
+        public function actionRating()
+    {
+        // Подключаем вид
+        require_once(ROOT . '/views/admin/rating.php');
+        return true;
+    }
+    
+        public function actionStatistic()
+    {
+        // Подключаем вид
+        require_once(ROOT . '/views/admin/statistic.php');
+        return true;
+    }
+    
+        public function actionSettings()
+    {
+
+        // Подключаем вид
+        require_once(ROOT . '/views/admin/settings.php');
         return true;
     }
 
