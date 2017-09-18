@@ -9,11 +9,14 @@ class AdminController
     /**
      * Action для стартовой страницы "Панель администратора"
      */
+    
+
+    
     public function actionIndex()
     {
         // Проверка доступа
         //self::checkAdmin();
-
+        $breadkrumb[0] = "/admin/index.php"; 
         $categoriesList = Category::getCategoriesListAdmin();
         $users = User::getUsersList();
 
@@ -180,9 +183,15 @@ class AdminController
         require_once(ROOT . '/views/admin/settings.php');
         return true;
     }
+    
+    public function actionLine() {
 
+        $result = Parse::run_parse();
+        require_once(ROOT . '/views/admin/line.php');
+        return true;
+    }
 
-   /* public function actionSearch() {
+    /* public function actionSearch() {
 
         if (isset($_POST['bsearch'])) {
             $words = $_POST['words'];

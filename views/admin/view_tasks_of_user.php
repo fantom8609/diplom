@@ -1,5 +1,9 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 <?php include ROOT . '/views/layouts/main_menu_admin.php'; ?>
+<!-- заглушка для хлебных крошек (переменная) -->
+<?php $task = 0; ?>
+<?php include ROOT . '/views/layouts/breadkrumb.php'; ?>
+
 <section>
   <div class="container">
     <div class="row">
@@ -15,7 +19,7 @@
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a href="/admin/task/<?php echo $task['id'];?>">
+                  <a class="removed_bread" href="/admin/task/<?php echo $task['id'];?>">
                   <?php echo $task['title'];?>
                 </a>
               </h4>

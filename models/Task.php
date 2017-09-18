@@ -16,7 +16,7 @@ class Task
         $db = Db::getConnection();
 
         // Запрос к БД
-        $result = $db->query('SELECT id, title, coment, status FROM task');
+        $result = $db->query('SELECT id, title, coment, status, upload, user_id FROM task');
 
         // Получение и возврат результатов
         $i = 0;
@@ -26,6 +26,8 @@ class Task
             $taskList[$i]['title'] = $row['title'];
             $taskList[$i]['coment'] = $row['coment'];
             $taskList[$i]['status'] = $row['status'];
+            $taskList[$i]['upload'] = $row['upload'];
+            $taskList[$i]['user_id'] = $row['user_id'];
             $i++;
         }
         return $taskList;
@@ -47,6 +49,7 @@ class Task
         // Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':id', $id, PDO::PARAM_INT);
+        
 
         // Указываем, что хотим получить данные в виде массива
         $result->setFetchMode(PDO::FETCH_ASSOC);
@@ -85,7 +88,7 @@ class Task
         $db = Db::getConnection();
 
         // Запрос к БД
-        $sql = 'SELECT id, title, coment, status, upload FROM task WHERE user_id = :user_id ORDER BY id ASC ';
+        $sql = 'SELECT id, title, coment, status, user_id, upload FROM task WHERE user_id = :user_id ORDER BY id ASC ';
         
         // Используется подготовленный запрос
         $result = $db->prepare($sql);
@@ -102,6 +105,35 @@ class Task
             $tasks[$i]['coment'] = $row['coment'];
             $tasks[$i]['upload'] = $row['upload'];
             $tasks[$i]['status'] = $row['status'];
+            $tasks[$i]['user_id'] = $row['user_id'];
+            
+            $i++;
+        }
+        return $tasks;
+    }
+    public static function getTaskByUserId($user_id) {
+         // Соединение с БД
+        $db = Db::getConnection();
+
+        // Запрос к БД
+        $sql = 'SELECT id, title, coment, status, user_id, upload FROM task WHERE user_id = :user_id ORDER BY id ASC ';
+        
+        // Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+        //выполнение запроса
+        $result->execute();
+
+        // Получение и возврат результатов
+        $task = array();
+        $i = 0;
+        while ($row = $result->fetch()) {
+            $task[$i] = $row['id'];
+            $task[$i] = $row['title'];
+            $task[$i] = $row['coment'];
+            $task[$i] = $row['upload'];
+            $task[$i] = $row['status'];
+            $task[$i] = $row['user_id'];
             
             $i++;
         }

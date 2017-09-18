@@ -10,6 +10,7 @@ function __autoload($class_name)
         '/models/',
         '/components/',
         '/controllers/',
+        '/php_libs/',
     );
 
     // Проходим по массиву папок

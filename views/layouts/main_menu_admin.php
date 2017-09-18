@@ -8,6 +8,7 @@
 		<li><a href="/admin/rating/">Рейтинг сотрудников</a></li>
 		<li><a href="/admin/statistic/">Статистика</a></li>
 		<li><a href="/admin/settings/">Настройки</a></li>
+                <li><a href="/admin/line/">Лента новостей</a></li>
 	</ul>
 </div>
 </div>

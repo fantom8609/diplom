@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title> Орловские новости</title>
+		<meta name="Keywords" content="  Орловские новости">
+		<meta name="Description" content="  Орловские новости">
+    <meta property="og:image" content="http://region.center.ru/images/rclogo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="css/main.styles.css" rel="stylesheet">
+		<link href="jss/calendar/ion.calendar.css" rel="stylesheet">
+	<meta name="mailru-domain" content="BFwwJgqZyxopHUZ9" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6152715896305366",
+    enable_page_level_ads: true
+  });
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MJMQTL');</script>
+<!-- End Google Tag Manager -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6152715896305366",
+    enable_page_level_ads: true
+  });
+</script>
+	</head>
+     <style>
+        embed, iframe, object, video {
+            max-width: 100%;
+        }
+        
+        body {
+        background:url('http://region.center/datathems/a5b0f817188cfea2bcdd849e99ca899f.png');
+        }    </style>
+<body>
+<header class="header layout-header">
+<!-- AdRiver code START:  код для кампании ; AD: 526850 "Орел ТопЛин"; ; extension -->
+<script type="text/javascript">
+(function(L){if(typeof(ar_cn)=="undefined")ar_cn=1;
+var S='setTimeout(function(e){if(!self.CgiHref){document.close();e=parent.document.getElementById("ar_container_"+ar_bnum);e.parentNode.removeChild(e);}},3000);',
+    j=' type="text/javascript"',t=0,D=document,n=ar_cn;L='http:'+L+escape(D.referrer||'unknown')+'&rnd='+Math.round(Math.random()*999999999);
+function _(){if(t++<100){var F=D.getElementById('ar_container_'+n);
+    if(F){try{var d=F.contentDocument||(window.ActiveXObject&&window.frames['ar_container_'+n].document);
+    if(d){d.write('<sc'+'ript'+j+'>var ar_bnum='+n+';'+S+'<\/sc'+'ript><sc'+'ript'+j+' src="'+L+'"><\/sc'+'ript>');t=0}
+    else setTimeout(_,100);}catch(e){try{F.src="javascript:{document.write('<sc'+'ript"+j+">var ar_bnum="+n+"; document.domain=\""
+    +D.domain+"\";"+S+"<\/sc'+'ript>');document.write('<sc'+'ript"+j+" src=\""+L+"\"><\/sc'+'ript>');}";return}catch(E){}}}else setTimeout(_,100);}}
+D.write('<div style="visibility:hidden;height:0px;left:-1000px;position:absolute;"><iframe id="ar_container_'+ar_cn
+    +'" width=1 height=1 marginwidth=0 marginheight=0 scrolling=no frameborder=0><\/iframe><\/div><div id="ad_ph_'+ar_cn
+    +'" style="display:none;"><\/div>');_();ar_cn++;
+})('//ad.adriver.ru/cgi-bin/erle.cgi?sid=1&ad=526850&bt=43&bn=526850&tail256=');
+</script>
+<!-- AdRiver code END -->
+</header>
+<div class="container layout-main"  style="background:#fff;">
+
+
+<section class="content col-center">
+        <div class="row">
+            <div class="col-xs-12">
+                <a class="header-logo hidden-lg" href="/"><span></span> <span>Новости</span> </a>
+            </div>
+            <div class="col-xs-12"></div>
+            <div class="col-xs-12 page-container"  style="overflow:hidden;">
+                <div id="w0" class="slide carousel" data-interval="6000">
+					<ol class="carousel-indicators">
+						<li class="active" data-target="#w0" data-slide-to="0"></li>
+						<li data-target="#w0" data-slide-to="1"></li>
+						<li data-target="#w0" data-slide-to="2"></li>
+						<li data-target="#w0" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner"><div class="item active">
+						<img src="http://region.center/source/OREL/vremennie/ludi/625e1e79d9ca5197884de8bb4967607c.jpg" alt="">
+						<div class="carousel-caption"><a href="fn_286574.html">Главред «Красной строки» написал заявление о выходе из КПРФ</a>
+						</div>
+						</div><div class="item ">
+						<img src="http://region.center/source/OREL/vremennie/crime/p10201952282.jpg" alt="">
+						<div class="carousel-caption"><a href="fn_286342.html">«Зарплату последний раз платили в мае» В Орле начался судебный процесс по иску бывшего директора тира, уволенного после письма Шойгу</a>
+						</div>
+						</div><div class="item ">
+						<img src="http://region.center/source/OREL/vremennie/ludi/photo_2017-08-30_11-45-49.jpg" alt="">
+						<div class="carousel-caption"><a href="fn_286108.html">«Мы не члены ОПГ» Суд в Орле начинает рассмотрение дела майора Доброхвалова</a>
+						</div>
+						</div><div class="item ">
+						<img src="http://region.center/source/OREL/vremennie/proischestvia/naber/Screenshot_7.jpg" alt="">
+						<div class="carousel-caption"><a href="fn_285788.html">«Всё нормально, дом сто лет стоять будет». В Орле произошло обрушение дома, о котором жильцы предупреждали чиновников давно. Репортаж «ОН»</a>
+						</div>
+						</div></div>
+
+					<a class="left carousel-control" href="#w0" data-slide="prev"><span class="fa fa-chevron-left icon-prev"></span></a>
+					<a class="right carousel-control" href="#w0" data-slide="next"><span class="fa fa-chevron-right icon-next"></span></a>
+				</div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Под главной новостью. -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6152715896305366"
+     data-ad-slot="5699869009"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><section class="feed">
+<h5 class="feed-heading">01  </h5>
+<div class="feed-post  important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>15:00 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_economy.html" > Экономика </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286703.html" >В ЦФО по темпам ввода жилья Орловскую область обогнали все регионы, кроме Ивановской области</a></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>14:30 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	
+                        <span class="fa fa-camera-retro"></span>   
+		        </div>
+		        <a class="post-title" href="fn_286689.html" >В Орле более 32 тысяч школьников отметили начало нового учебного года. Фоторепортаж</a></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>14:13 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286607.html" >Прием заявок на участие в премии «Орловский БИЗНЕС» продолжается</a></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>13:28 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	
+                        <span class="fa fa-camera-retro"></span>   
+		        </div>
+		        <a class="post-title" href="fn_286674.html" >В Орле пожарные спасли двух жильцов из загоревшейся квартиры. Фоторепортаж</a></div>
+<div class="feed-post  important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>13:00 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286664.html" >В Орле суд отставил под домашним арестом девушку, подозреваемую в убийстве своего парня</a><div class="post-media">
+            		<img src="http://region.center/source/OREL/vremennie/crime/1482342599.jpg" alt="" class="post-image img-responsive">
+        		</div></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>12:34 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286600.html" >В Орле на здание бывшей синагоги оформили охранное обязательство</a></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>12:01 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286631.html" >В Орле ФСБ возбудила дело на предполагаемого сбытчика героина</a></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>11:30 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_incidients.html" > Происшествия </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286579.html" >В Орле отечественная легковушка насмерть сбила пешехода</a></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>11:05 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286568.html" >Орловец будет полгода работать на благо общества за осквернение памятника</a></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>10:37 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286581.html" >Потомский поздравил школьников и учителей с 1 сентября и пожелал бодрости</a></div>
+<div class="feed-post  important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>10:32 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286556.html" >Новый владелец «Орловской крепости» планируют возобновить производство</a></div>
+<div class="feed-post  important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>10:19 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_politics.html" > Политика </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286574.html" >Главред «Красной строки» написал заявление о выходе из КПРФ</a></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>10:02 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_economy.html" > Экономика </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286550.html" >На Орловщине в конце лета зафиксировали дефляцию</a></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>09:30 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286546.html" >Уличные торговцы под прицелом. В Орле прошел рейд по незаконной  торговле </a></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>09:00 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286540.html" >Благоустройство дворов и общественных территорий Орла идет с отставанием графика</a></div>
+<div class="feed-post  important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>08:30 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286528.html" >СК по Орловской области проверяет организацию, собирающую пожертвования на улицах и в общественном транспорте</a></div>
+<div class="feed-post  important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>08:00 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	<span class="fa fa-video-camera"></span>   
+                        
+		        </div>
+		        <a class="post-title" href="fn_286522.html" >Орловчанка стала жертвой мошенников, орудующих от имени благотворительной организации. Видео</a>
+        		  <div class="post-media embed-responsive embed-responsive-16by9">
+        		  <iframe width="560" height="315" src="https://www.youtube.com/embed/Va3I43lgZYU" frameborder="0" allowfullscreen></iframe>
+             	</div></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>06:04 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286395.html" >В первый осенний день в Орле будет тепло </a></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>04:15 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286433.html" >За десять лет материнский капитал получили 36 тысяч орловчанок</a></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>02:06 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_culture.html" > Культура </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286407.html" >Акция «Спасатели - детям» пройдет 2 сентября</a></div>
+<div class="feed-post  ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>00:06 </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_incidients.html" > Происшествия </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286401.html" >Под Орлом 17-летний работник автомойки угнал иномарку</a></div>
+</section>
+
+	<section class="feed">
+	    <h5 class="feed-heading">31 </h5>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>23:04  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286471.html" >Под Орлом дом отключат от газа. Правда, всего на 6 часов</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>22:01  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        <span class="fa fa-camera-retro"></span>   
+		        </div>
+		        <a class="post-title" href="fn_286461.html" >В Орловском районе будущих первоклассников из многодетных семей собрали в школу. Фоторепортаж</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>21:00  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286485.html" >Вечерний дайджест новостей: Суд над экс-директором тира, написавшим письмо Шойгу, кредит в полмиллиарда рублей и непристойные ягодицы</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>20:03  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286479.html" >В Орле на Ботанике курянин грабил прохожих, угрожая ножом и осколком бутылки</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>19:33  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286506.html" >В Орловской области с начала года на 39% сократилось количество преступлений, совершенных подростками</a>
+		  </div>
+<div class="feed-post important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>19:12  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_politics.html" > Политика</a>
+		             	<span class="fa fa-video-camera"></span>   
+                        
+		        </div>
+		        <a class="post-title" href="fn_286437.html" >Музалевский в интервью ОГТРК подвел итоги 14 заседания облсовета. (Спойлер: поговорили о скандальном законе о митингах). Видео</a>
+        		  <div class="post-media embed-responsive embed-responsive-16by9">
+        		  <iframe width="560" height="315" src="https://www.youtube.com/embed/Vvu-R1mzqYQ" frameborder="0" allowfullscreen></iframe>
+             	</div>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>18:35  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286467.html" >Газовики информируют: в Кромах на улице Карла Маркса отключат газ</a>
+		  </div>
+<div class="feed-post important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>18:08  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_jkh.html" > ЖКХ</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286429.html" >МНЕНИЕ: Вдовин съездил в Общественную палату и рассказал, какие поправки ждут Жилищный кодекс РФ</a>
+		  </div>
+<div class="feed-post important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>17:26  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_business.html" > Бизнес</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286475.html" >«Орелстрой» купил здание детсада на улице Игнатова</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>17:01  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286425.html" >Под Орлом оштрафовали еще одну ветаптеку. За неправильное хранение лекарств </a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>16:31  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286373.html" >Руководителя «СУ-5» оштрафовали за трудовой договор, оформленный с нарушениями</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>16:11  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286375.html" >В Орловской области лесорубу придется возместить государству 69 тысяч рублей</a>
+		  </div>
+<div class="feed-post important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>15:17  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286391.html" >Эксперты УФАС признали женские ягодицы непристойными и оскорбительными образами</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>15:01  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_incidients.html" > Происшествия</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286357.html" >В Ливнах подожгли светофор. Директор МУПа попросил горожан быть вежливее</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>14:29  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286332.html" >Злоумышленники в Орле маскируются под поисковиков</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>14:02  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286334.html" >Причина обрушения дома на набережной в Орле станет известна в начале сентября</a>
+		  </div>
+<div class="feed-post important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>13:22  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_.html" > </a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286342.html" >«Зарплату последний раз платили в мае» В Орле начался судебный процесс по иску бывшего директора тира, уволенного после письма Шойгу</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>13:15  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_economy.html" > Экономика</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286302.html" >Как вкладчику пережить ликвидацию банка и не потерять вклад: рецепт для орловчан от АСВ</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>12:30  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286321.html" >После установки бронзовой Лизы Калитиной памятник возьмет на баланс УКХ Орла</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>12:03  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286306.html" >Орловским защитникам животных могут сдать земельный участок в аренду бесплатно</a>
+		  </div>
+<div class="feed-post important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>11:30  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286292.html" >«Этот кредит катастрофический»: орловские депутаты возмутились, но согласовали кредит в полмиллиарда рублей для города</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>11:11  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286282.html" >В Орле завершился разбор завалов на месте обрушения стены дома по Набережной Дубровинского</a>
+		  </div>
+<div class="feed-post important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>10:44  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_politics.html" > Политика</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286276.html" >«Не нужно искать политической подоплеки» Депутат Савин о скандальном законе о митингах</a><div class="post-media">
+            		<img src="http://region.center/source/OREL/vremennie/ludi/deloputi/Savin%20Valeriy_580x370_db7.jpg" alt="" class="post-image img-responsive">
+        		</div>
+		  </div>
+<div class="feed-post important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>10:26  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286272.html" >Руководителя управления архитектуры и градостроительства Орла Олега Минкина сделали первым замом сити-менеджера</a>
+		  </div>
+<div class="feed-post important">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>09:50  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_incidients.html" > Происшествия</a>
+		             	
+                        <span class="fa fa-camera-retro"></span>   
+		        </div>
+		        <a class="post-title" href="fn_286251.html" >Под Тулой заснувший за рулем орловец протаранил 3 авто и отбойник. Один из водителей скончался. Фоторепортаж</a><div class="post-media">
+            		<img src="http://region.center/source/OREL/vremennie/proischestvia/dtp/14.jpg" alt="" class="post-image img-responsive">
+        		</div>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>09:31  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_incidients.html" > Происшествия</a>
+		             	
+                        <span class="fa fa-camera-retro"></span>   
+		        </div>
+		        <a class="post-title" href="fn_286239.html" >На трассе под Орлом на встречке столкнулись две иномарки. Водители получили травмы. Фоторепортаж</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>09:02  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286233.html" >Экс-директора орловского технологического техникума осудили за служебный подлог и присвоение</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>08:12  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_culture.html" > Культура</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286137.html" >В Орле на дом купца Калабухова оформили охранное обязательство</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>06:02  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286049.html" >В четверг в Орле потеплеет. Будет солнечно</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>04:07  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286186.html" >За нарушения ПДД приставы с орловцев взыскали более 36 млн рублей</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>02:09  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_incidients.html" > Происшествия</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286123.html" >В Орле новый знакомый украл у орловчанки сумку с золотом и гаджетом</a>
+		  </div>
+<div class="feed-post ">
+		        <div class="post-meta">
+		            <span class="post-pubDate">
+		                <i class="fa fa-clock-o"></i>00:07  </span>
+		                <!-- span class="post-commentCount">
+		                	<i class="icon fa fa-comment"></i>
+		                	<a href="#mc-container"></a>
+		            	</span !-->
+		             	<a class="post-category" href="cat_society.html" > Общество</a>
+		             	
+                        
+		        </div>
+		        <a class="post-title" href="fn_286100.html" >Орловцев привлекли к ответственности за ремонт плотины</a>
+		  </div>
+</section>
+    <div style="margin-bottom:25px;" id="calendar-2" style="height:450px;"></div>
+
+</section>
+<script type="text/javascript">
+    cackle_widget = window.cackle_widget || [];
+    cackle_widget.push({widget: 'Comment', id: 32253});
+</script>
+
+<aside class="aside-left col-left">
+        <a class="header-logo visible-lg" href="/"><img class="logo-image" src="images/logo.png"></a>
+                <div class="first-nav">
+
+        <nav class="nav-social nav nav-stacked" style="padding-top:15px;">
+          <a target='_blank' href="https://vk.com/public81485945" class="social-link fa fa-vk" style="background:#5d7294;color:#fff;" title="Вконтакте"> </a>
+          <a target='_blank' href="http://ok.ru/group/52437698543789" class="social-link fa fa-odnoklassniki"  style="background:#ee8208;color:#fff;" title="Одноклассники"> </a>
+          <a target='_blank' href="https://www.facebook.com/newsorel" class="social-link fa fa-facebook"  style="background:#475995;color:#fff;" title="facebook"> </a>
+          <a target='_blank' href="https://twitter.com/newsorel" class="social-link fa fa-twitter" style="background:#76aaeb ;color:#fff;" title="Twitter"> </a>
+          <a target='_blank' href="/feed/all" class="social-link last-item fa fa-rss" style="background:#ff6600;color:#fff;"  title="Rss"> </a>
+     	</nav>
+
+
+
+            <ul class="nav-main nav" role="navigation">
+				<li ><a href="cat_politics.html">Политика    </a></li>
+				<li ><a href="cat_economy.html">Экономика   </a></li>
+				<li ><a  href="cat_business.html">Бизнес      </a></li>
+				<li ><a href="cat_incidients.html">Проиcшествия </a></li>
+				<li ><a href="cat_society.html">Общество    </a></li>
+				<li ><a href="cat_afisha.html">Афиша    </a></li>
+				<li ><a href="cat_sport.html">Спорт       </a></li>
+				<li ><a href="cat_jkh.html">ЖКХ         </a></li>
+				<li ><a href="cat_culture.html">Культура    </a></li>
+				<li ><a href="cat_analytics.html">Аналитика   </a></li>
+				<li ><a href="cat_interview.html">Интервью    </a></li>
+				<li ><a href="cat_investigation.html">Расследования    </a></li>
+				<li ><a href="cat_company.html">Новости компаний   </a></li>
+				<li ><a href="cat_top100.html">100 самых влиятельных людей    </a></li>
+				<li ><a href="cat_primjalibemurzalevskim.html">Прямая линия с Музалевским    </a></li>
+				<li ><a href="cat_history.html">Истории    </a></li>
+				<li ><a href="photo.html">Фото        </a></li>
+				<li ><a href="video.html">Видео       </a></li>
+			</ul>
+		<div>
+
+
+
+
+
+    <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'http://newsorel.ru/search.html','arrow':false,'bg':'#5e7788','fontsize':12,'fg':'#000000','language':'ru','logo':'rb','publicname':'newsorel.ru','suggest':true,'target':'_self','tld':'ru','type':3,'usebigdictionary':true,'searchid':2188289,'webopt':false,'websearch':false,'input_fg':'#000000','input_bg':'#ffffff','input_fontStyle':'normal','input_fontWeight':'normal','input_placeholder':'Поиск по сайту','input_placeholderColor':'#000000','input_borderColor':'#5e7788'}"><form action="http://yandex.ru/sitesearch" method="get" target="_self"><input type="hidden" name="searchid" value="2188289"/><input type="hidden" name="l10n" value="ru"/><input type="hidden" name="reqenc" value=""/><input type="search" name="text" value=""/><input type="submit" value="Найти"/></form></div><style type="text/css">.ya-page_js_yes .ya-site-form_inited_no { display: none; }</style><script type="text/javascript">(function(w,d,c){var s=d.createElement('script'),h=d.getElementsByTagName('script')[0],e=d.documentElement;if((' '+e.className+' ').indexOf(' ya-page_js_yes ')===-1){e.className+=' ya-page_js_yes';}s.type='text/javascript';s.async=true;s.charset='utf-8';s.src=(d.location.protocol==='https:'?'https:':'http:')+'//site.yandex.net/v2.0/js/all.js';h.parentNode.insertBefore(s,h);(w[c]||(w[c]=[])).push(function(){Ya.Site.Form.init()})})(window,document,'yandex_site_callbacks');</script>
+    <style type="text/css">
+        .ya-page_js_yes .ya-site-form_inited_no { display: none; }
+        .ya-site-form__search-input-layout-l {
+            width: 170px;
+        }
+        .ya-site-form__form{
+            margin: 0 0 10px 0 !important;
+        }
+        .ya-site-form__search-input {
+            padding: 0 0 0 0 !important;
+        }
+        .ya-site-form__input-text {
+            font-size: 14px;
+            padding: 6px 12px;
+            height: 34px !important;
+            margin: 0 !important;
+        }
+        .ya-site-form__submit {
+            padding: 6px 12px 6px 24px !important;
+            background: #a8c3d4 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAAAvUlEQVQokaXSoXICMRRGYUTFiooKBALZB1ixooIH4N1WrkTwAAgEEoFcsaISUVmBQCAQlV/F3sxkmE2nM/zy3Jwk9yaz2TPBG1oMuOMTHeYlYYVv07liPXVCEo5o8IoPnILfsMylNgmFWxyivs3hELApSE3Uv3J4CVgVpCo1l8M+WF2Q6jSQHHYBDwVpN9XTPMYKe7zjJU5IAqwed1vHWP/KGYtHcYmN8Sf8xKKN8eHPRbEULDJx+JeUiT36X1JWYoM5za8vAAAAAElFTkSuQmCC') center center no-repeat !important;
+            height: 32px !important;
+            margin: 0 !important;
+            color: #fff !important;
+            border: none !important;
+
+        }
+    </style>
+</div>
+
+
+
+
+     </div>
+
+
+        <div class="nav-controls visible-lg">
+            <a href="#top" class="btn-top fa fa-arrow-up" onclick="$(document).scrollTop(0);"></a>
+        </div>
+                <div class="second-nav">
+        <div style="margin-bottom:25px;" id="calendar-1"></div>
+            <div class="box widget">
+              <!-- AdRiver code START:  код для кампании   AD: 500703 "Орел 240х400 левый"; 240x400 -->
+<script type="text/javascript">
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=1&ad=500703&bt=22&bn=500703&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=240 height=400 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+</script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&ad=500703&bt=22&bn=500703&rnd=498711216" target="_blank">
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=1&ad=500703&bt=22&bn=500703&rnd=498711216" alt="-AdRiver-" border=0 width=240 height=400></a>
+</noscript>
+
+<!-- AdRiver code END -->
+
+
+
+
+
+
+            </div>
+
+
+             <br /><br />
+			<div class="panel panel-list-group widget">
+        	<a class="panel-heading" href="cat_newscomp.html"><i class="fa fa-chevron-right"></i>Экономические новости</a>
+        		<ul class="panel-body list-group list-article">
+
+        		   <li class="list-group-item"><img class="img-responsive" src="http://bizmag.online/source/VORONEZH/file_67.jpg" alt=""><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>01/09 15:01</div><a href="http://bizmag.online/fn_10881.html">На суде по делу Улюкаева дают показания важные свидетели</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>01/09 14:18</div><a href="http://bizmag.online/fn_10878.html">Центробанк снизил на выходные курсы основных валют</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>01/09 14:02</div><a href="http://bizmag.online/fn_10875.html">Свердловская область сократила объем госдолга</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>01/09 13:38</div><a href="http://bizmag.online/fn_10874.html">Госдума к концу осени примет законы о криптовалюте - А.Аксаков</a>
+        			</li>
+
+
+
+
+
+
+
+        		</ul>
+        </div>
+            <br /><br />
+			<div class="panel panel-list-group widget">
+        	<a class="panel-heading" href="cat_primjalibemurzalevskim.html"><i class="fa fa-chevron-right"></i>Прямая линия с Музалевским</a>
+        		<ul class="panel-body list-group list-article">
+
+        		   <li class="list-group-item"><img class="img-responsive" src="http://region.center/source/OREL/vremennie/ludi/deloputi/bf145d29e8f38a76f4bbe0ee950fd494.jpg" alt=""><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>28/07 20:30</div><a href="fn_281091.html">Ремонт детских садов, трудоустройство инвалидов и другие вопросы Леониду Музалевскому</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>26/07 19:30</div><a href="fn_280706.html">Остановки, детские сады и другие вопросы Леониду Музалевскому</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>21/07 18:30</div><a href="fn_280129.html">Транспорт, водоснабжение, медицина: Облсовет продолжает отвечать на вопросы читателей &quot;ОН&quot;</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>19/07 20:00</div><a href="fn_279809.html">Водопровод, освещение, льготы: Облсовет продолжает отвечать на вопросы читателей &quot;ОН&quot;</a>
+        			</li>
+
+
+
+
+
+
+
+        		</ul>
+        </div>
+
+            <br /><br />
+			<div class="panel panel-list-group widget">
+        	<a class="panel-heading" href="cat_company.html"><i class="fa fa-chevron-right"></i>Новости компаний</a>
+        		<ul class="panel-body list-group list-article">
+
+        		   <li class="list-group-item"><img class="img-responsive" src="http://region.center/source/OREL/vremennie/transtort/buy_vol2.jpg" alt=""><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>30/08 11:43</div><a href="fn_285996.html">Летняя ремонтно-путевая кампания в Орловско-Курском регионе Московской железной дороги завершится к началу октября</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>29/08 15:25</div><a href="fn_285757.html">&quot;Мы живем в экологически чистом районе Орла - речка, тишина&quot;: в Первом микрорайоне начали отмечать новоселье</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>24/08 11:30</div><a href="fn_284717.html">«Ростелеком» предлагает бизнесу сервисы аутсорсинга отчётности, бухгалтерских услуг и передачи заверенной информации в электронном виде</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>23/08 11:04</div><a href="fn_284532.html"> «Ростелеком» предлагает орловскому бизнесу услугу «Управляемый Wi-Fi»</a>
+        			</li>
+
+
+
+
+
+
+
+        		</ul>
+        </div>
+        <div class="box widget">  <!-- Yandex.RTB R-A-141668-1 -->
+<div id="yandex_rtb_R-A-141668-1"></div>
+<script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-A-141668-1",
+                renderTo: "yandex_rtb_R-A-141668-1",
+                horizontalAlign: false,
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script>     </div>
+
+
+
+<script src='//mediametrics.ru/partner/inject/inject.js' type='text/javascript' id='MediaMetricsInject' data-width='240' data-height='400' data-img='true' data-imgsize='70' data-type='img' data-bgcolor='FFFFFF' data-bordercolor='000000' data-linkscolor='232323' data-transparent='' data-rows='5' data-inline='' data-font='big' data-fontfamily='roboto' data-border='' data-borderwidth='0' data-alignment='vertical' data-country='ru' data-site='mmet/newsorel_ru'> </script>
+
+   </div>
+
+</aside>
+
+
+
+
+    <aside class="aside-right col-right">
+
+        <div class="box widget">
+           <!-- AdRiver code START:  код для кампании   AD: 500702 "Орел 240х400 правый"; javascript -->
+<script type="text/javascript">
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write('<sc' + 'ript type="text/javascript" src="http://ad.adriver.ru/cgi-bin/erle.cgi?sid=1&ad=500702&bt=16&bn=500702&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail + '"><\/sc' + 'ript>');
+</script>
+<!-- AdRiver code END -->
+
+
+<!-- AdRiver code START:  код для кампании   AD: 500702 "Орел 240х400 правый"; 240x400 -->
+<script type="text/javascript">
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=1&ad=500702&bt=22&bn=500702&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=240 height=400 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+</script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=1&ad=500702&bt=22&bn=500702&rnd=1076178595" target="_blank">
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=1&ad=500702&bt=22&bn=500702&rnd=1076178595" alt="-AdRiver-" border=0 width=240 height=400></a>
+</noscript>
+
+<!-- AdRiver code END -->
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        
+
+        <div class="panel panel-list-group widget">
+        	<a class="panel-heading" href="#"><i class="fa fa-chevron-right"></i>Топ 5</a>
+        		<ul class="panel-body list-group list-article">
+        		   <li class="list-group-item"><img class="img-responsive" src="http://region.center/source/OREL/vremennie/proischestvia/fJCFBXTB934.jpg" alt=""><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>01/09 11:30</div><a href="fn_286579.html">В Орле отечественная легковушка насмерть сбила пешехода</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>31/08 17:26</div><a href="fn_286475.html">«Орелстрой» купил здание детсада на улице Игнатова</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>31/08 14:29</div><a href="fn_286332.html">Злоумышленники в Орле маскируются под поисковиков</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>31/08 13:22</div><a href="fn_286342.html">«Зарплату последний раз платили в мае» В Орле начался судебный процесс по иску бывшего директора тира, уволенного после письма Шойгу</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>31/08 11:30</div><a href="fn_286292.html">«Этот кредит катастрофический»: орловские депутаты возмутились, но согласовали кредит в полмиллиарда рублей для города</a>
+        			</li>
+        		</ul>
+        </div>
+
+
+        <div class="panel panel-list-group widget">
+        	<a class="panel-heading" href="cat_analytics.html"><i class="fa fa-chevron-right"></i>Аналитика</a>
+        		<ul class="panel-body list-group list-article">
+
+        		   <li class="list-group-item"><img class="img-responsive" src="http://region.center/source/OREL/vremennie/ludi/Potomsky/39228.jpg" alt=""><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>25/08 15:12</div><a href="fn_285012.html">Потомский продержится до конца срока - АПЭК</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>09/08 14:10</div><a href="fn_282600.html">«Шаг вперед, два шага назад?» Орловские власти впервые признали наличие кризиса в строительной отрасли региона</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>01/08 15:30</div><a href="fn_281461.html">Рейтинг электронных СМИ. Июль</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>02/07 08:03</div><a href="fn_277499.html">Рейтинг электронных СМИ. Июнь</a>
+        			</li>
+
+
+
+
+
+
+
+        		</ul>
+        </div>
+
+
+         <div class="panel panel-list-group widget">
+        	<a class="panel-heading" href="cat_interview.html"><i class="fa fa-chevron-right"></i>Интервью</a>
+        		<ul class="panel-body list-group list-article">
+
+                    <li class="list-group-item"><img class="img-responsive" src="http://region.center/source/OREL/OREL/kalinina2/1.jpg" alt=""><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>24/08 08:15</div><a href="fn_284545.html">«Мы хотим помочь, но нас не хотят слышать»: Виталия Румянцева о борьбе за права животных в Орле</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>10/08 08:30</div><a href="fn_282648.html">«Он применял физическую силу и в больнице »: Главврач орловской психбольницы Игорь Кочергин об инциденте со сбежавшим пациентом и о сложностях в работе больницы</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>27/07 13:15</div><a href="fn_280797.html">«Я буду работать, сколько скажет губернатор»: новый почетный гражданин Орла Ефим Вельковский дал интервью «Орловским новостям»</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info"><i class="fa fa-clock-o"></i>25/07 18:32</div><a href="fn_280547.html">«Такие встречи полезны»: Юрий Парахин о проблемах и достижениях Орловского района</a>
+        			</li>
+
+
+
+
+
+        		</ul>
+        </div>
+
+        <div class="panel panel-list-group widget">
+        	<a class="panel-heading"><i class="fa fa-chevron-right"></i>Новости соседей</a>
+        		<ul class="panel-body list-group list-article">
+                    <li class="list-group-item"><div class="item-prepend item-info">
+        				<i class="fa fa-clock-o"></i>
+        				01/09 10:49
+        				</div>
+        				<a href="http://newstula.ru/fn_286583.html">Сергей Шойгу поздравил тульских суворовцев с началом учебного года </a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info">
+        				<i class="fa fa-clock-o"></i>
+        				31/08 09:54
+        				</div>
+        				<a href="http://newstula.ru/fn_286257.html">АО «НПО «СПЛАВ» заказывает недвижимое имущество на 200 млн рублей</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info">
+        				<i class="fa fa-clock-o"></i>
+        				30/08 15:06
+        				</div>
+        				<a href="http://kaluganews.ru/fn_286045.html">В калужской психбольнице обнаружили подпольное производство?</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info">
+        				<i class="fa fa-clock-o"></i>
+        				30/08 11:46
+        				</div>
+        				<a href="http://newstula.ru/fn_285997.html">В Заокском районе с 4 сентября стартует прием документов от кандидатов на пост главы администрации</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info">
+        				<i class="fa fa-clock-o"></i>
+        				29/08 14:09
+        				</div>
+        				<a href="http://newstula.ru/fn_285809.html">В отношении ООО «Инвестпроект» открыто конкурсное производство</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info">
+        				<i class="fa fa-clock-o"></i>
+        				29/08 12:51
+        				</div>
+        				<a href="http://newstula.ru/fn_285775.html">Госдолг Тульской области составляет свыше 16 млрд рублей</a>
+        			</li>
+        		</ul>
+        </div>
+        <div class="panel panel-list-group widget">
+        	<a class="panel-heading"><i class="fa fa-chevron-right"></i>Регион Центр</a>
+        		<ul class="panel-body list-group list-article">
+                    <li class="list-group-item"><div class="item-prepend item-info">
+        				<i class="fa fa-clock-o"></i>
+        				01/09 14:31
+        				</div>
+        				<a href="http://region.center/fn_286687.html">Москвичи из списка «Forbes» инвестируют в строительство мусорной станции в Киржачском районе</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info">
+        				<i class="fa fa-clock-o"></i>
+        				01/09 12:30
+        				</div>
+        				<a href="http://region.center/fn_286650.html">В Тульской области готовность к отопительному сезону 2017-2018 составляет 90% </a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info">
+        				<i class="fa fa-clock-o"></i>
+        				01/09 11:23
+        				</div>
+        				<a href="http://region.center/fn_286605.html">Владимирская область подписала соглашение о сотрудничестве с Приморским краем</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info">
+        				<i class="fa fa-clock-o"></i>
+        				01/09 10:49
+        				</div>
+        				<a href="http://region.center/fn_286584.html">Сергей Шойгу поздравил тульских суворовцев с началом учебного года </a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info">
+        				<i class="fa fa-clock-o"></i>
+        				01/09 10:19
+        				</div>
+        				<a href="http://region.center/fn_286575.html">Главред орловской газеты «Красная строка» написал заявление о выходе из КПРФ</a>
+        			</li>
+<li class="list-group-item"><div class="item-prepend item-info">
+        				<i class="fa fa-clock-o"></i>
+        				01/09 09:18
+        				</div>
+        				<a href="http://region.center/fn_286539.html">В 33 регионе во время купального сезона погибло 23 человека </a>
+        			</li>
+        		</ul>
+        </div>
+   
+
+
+
+
+        <div class="panel panel-list-group widget">
+            <a class="panel-heading" href="#">Последние комментарии</a>
+
+            <div id="mc-last" class="panel-body list-group list-article">
+                <script type="text/javascript">
+                        cackle_widget = window.cackle_widget || [];
+                        cackle_widget.push({widget: 'CommentRecent', id: 32253, size: '5', textSize: '70'});
+                        (function () {
+                            var mc = document.createElement('script');
+                            mc.type = 'text/javascript';
+                            mc.async = true;
+                            mc.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cackle.me/widget.js';
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(mc, s.nextSibling);
+                        })();
+                    </script>
+            </div>
+        </div>
+     
+
+
+
+   </aside>
+
+
+</div>
+
+
+
+
+
+
+
+
+<footer class="footer layout-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 footer-nav">
+                <a class="nav-link" href="page_4.html"> Редакция </a>
+                <a class="nav-link" href="page_5.html"> Реклама </a>
+
+                <span class="sixteen-plus pull-right"> 16 + </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-5" itemscope itemtype="http://schema.org/Organization">
+               <img class="" itemprop="logo" src="images/logo-sm.png" style="float: left; width: 80px; margin: 0 10px 10px 0" />
+                2016 &copy; NEWSOREL.RU | ИА &laquo;<span itemprop="name">Орловские новости</span>&raquo;
+                <br/>
+                Телефон:<a href="tel:+7-486-276-4956" itemprop="telephone">+7 (4862) 764-956</a>
+                <br/>
+                Электронная почта: <a href="mailto:info@newsorel.ru" itemprop="email">info@newsorel.ru</a>
+                <br/>
+                г. Орел, ул. Салтыкова-Щедрина, д.34, оф.316
+    <br />
+
+                <a href="/svid.jpg">Свидетельство о регистрации СМИ ЭЛ №ФС 77–69066 от 14.03.2017г. Выдано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций</a>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-5">
+                <p>Сообщения на сером фоне размещены на правах рекламы</p>
+                <p><a target="_blank" rel="noindex" href="http://mazov.ru/" style="">Разработка и поддержка &laquo;Рекламное агентство &laquo;Мазов и Ко&raquo;</a></p>
+                <p>При использовании любого материала с данного сайта гипер-ссылка на ИА «Орловские новости» обязательна.</p>
+            </div>
+
+            <div class="col-xs-12 col-md-12 col-lg-2">
+
+
+
+           <a href="http://yandex.ru/cy?base=0&amp;host=newsorel.ru"><img src="http://www.yandex.ru/cycounter?newsorel.ru" width="88" height="31" alt="Индекс цитирования" border="0" /></a>
+					               <!--LiveInternet counter--><script type="text/javascript">
+					document.write("<a href='//www.liveinternet.ru/click' "+
+					"target=_blank><img src='//counter.yadro.ru/hit?t18.6;r"+
+					escape(document.referrer)+((typeof(screen)=="undefined")?"":
+					";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+					screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+					";"+Math.random()+
+					"' alt='' title='LiveInternet: показано число просмотров за 24"+
+					" часа, посетителей за 24 часа и за сегодня' "+
+					"border='0' width='88' height='31'><\/a>")
+					</script><!--/LiveInternet-->
+
+					<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=27310931&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/27310931/3_0_FFFFFFFF_FFFFFFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="27310931" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter27310931 = new Ya.Metrika({
+                    id:27310931,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/27310931" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+<script src="//vk.com/js/api/openapi.js"></script>
+<script src="jss/jquery.js"></script>
+<script src="jss/yii.js"></script>
+<script src="jss/main.script.js"></script>
+ <!-- календарь -->
+<script src="jss/calendar/moment.min.js"></script>
+<script src="jss/calendar/moment.ru.js"></script>
+<script src="jss/calendar/moment.ja.js"></script>
+<script src="jss/calendar/ion.calendar.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+$("#calendar-1").ionCalendar({
+    lang: "ru",
+    sundayFirst: false,
+    years: "2011-2017",
+    format: "YYYY-MM-DD",
+    onClick: function(date){
+        open("/sort_"+ date +".html");
+    }
+});
+$("#calendar-2").ionCalendar({
+    lang: "ru",
+    years: "2011-2017",
+    sundayFirst: false,
+    format: "YYYY-MM-DD",
+    onClick: function(date){
+        open("/sort_"+ date +".html");
+    }
+});
+
+ $('.click').on('click', function(){
+   $('.yandexframe').slideToggle(0);
+   if($('#yandexframe').length === 0){
+    $('<iframe />', {
+      id : 'yandexframe',
+      src : 'https://tts.voicetech.yandex.net/generate?text=&format=mp3&lang=ru-RU&speaker=jane&key=96962c91-308d-46b8-950a-607622e63220'
+    }).appendTo('.mydiv');
+   }
+  });
+});
+</script>
+ <!-- календарь -->
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6LL5J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html>

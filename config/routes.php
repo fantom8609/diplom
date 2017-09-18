@@ -42,6 +42,8 @@ return array(
     'about' => 'site/about',
     */
      
+    
+    
 
 
     //установка выолненного статуса задаче
@@ -53,11 +55,12 @@ return array(
     //оценка задачи
     'admin/task/mark/([0-9]+)' => 'task/markAjax/$1',
 
-     
+    
 
 
     //информация о задаче у админа
     'admin/task/([0-9]+)' => 'task/Adminviewtask/$1',
+
 
 
     //вывод задач пользователя 
@@ -85,6 +88,8 @@ return array(
     //настройки сайта
     'admin/settings' => 'admin/settings',
     
+    //новости 
+    'admin/line' => 'admin/line',
     
     
     //показать данные пользователя
@@ -118,6 +123,11 @@ return array(
     
     //страница "профиль"
     'statistic' => 'site/statistic',
+    
+    //онлайн чат
+    'show/messages' => 'chat/showMessages',
+    'send/([0-9]+)' => 'chat/sendMessage/$1',
+    
 
     // Главная страница
     'index.php' => 'site/index', // actionIndex в SiteController

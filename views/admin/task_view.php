@@ -1,6 +1,7 @@
 
 <?php include ROOT . '/views/layouts/header.php'; ?>
 <?php include ROOT . '/views/layouts/main_menu_admin.php'; ?>
+<?php include ROOT . '/views/layouts/breadkrumb.php'; ?>
 <section>
     <div class="container">
         <div class="row">
@@ -28,7 +29,7 @@
                                 $path_name=explode("/htdocs",$path);
                                 print_r ($path_name[1]); ?>" download><?php $path=$task['upload'];
                                 $name=explode("upload/",$path); print_r ($name[1]); ?></a><br>
-                                
+                         
                                 <a href="#" class="btn change-status-complete" data-id="<?php echo $task['id'];?>">Отметить выполнение</a><br>
                                 <a href="#" class="btn change-status-failed" data-id="<?php echo $task['id'];?>">Отметить провал</a><br>
                                 <a href="#" class="btn change-status-activate" data-id="<?php echo $task['id'];?>">Активировать</a><br>

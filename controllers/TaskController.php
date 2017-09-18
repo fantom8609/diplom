@@ -6,7 +6,7 @@
  */
 class TaskController
 {
-
+   
     /**
      * Action для страницы просмотра товара
      * @param integer $productId <p>id товара</p>
@@ -32,13 +32,17 @@ class TaskController
     public function actionAdminviewtask($taskId)
     {
         // Список категорий для левого меню
-        $tasks = Task::getTasksList();
-
+        $tasks = Task::getTasksList();  
         // Получаем инфомрацию о задаче
         $task = Task::getTaskById($taskId);
+        $user_id = $task['user_id'];
+        
+        $user = User::getUserById($user_id);
 
         // Подключаем вид
+     
         require_once(ROOT . '/views/admin/task_view.php');
+        
         return true;
     }
 
@@ -48,10 +52,11 @@ class TaskController
         $user = User::getUserById($userId);
 
         $tasks = Task::getTasksByUserId($userId);
-
-
+        $user_id = $user['id'];
+        
         require_once(ROOT . '/views/admin/view_tasks_of_user.php');
-        require_once(ROOT . '/views/site/index.php');
+        
+        //require_once(ROOT . '/views/site/index.php');
         return true;
 
 
