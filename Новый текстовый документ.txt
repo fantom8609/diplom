@@ -1,3 +1,5 @@
+
+йнлюмдш GIT
 echo "# diplom" >> README.md
 git init
 git add README.md
@@ -11,4 +13,14 @@ git push -u origin master
 
 
 хЯРНВМХЙХ:
-http://dnzl.ru/view_post.php%3Fid%3D198
+йнлонгеп
+https://packagist.org/packages/math/ratio
+https://getcomposer.org/doc/04-schema.md
+https://www.youtube.com/watch?v=hiNfvS4Be0E
+
+
+SOLID
+https://www.youtube.com/watch?v=0qP6Vh8GNM0
+
+окюрефх мю яюире:
+https://www.youtube.com/watch?v=9OxS5UnVdOo

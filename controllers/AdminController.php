@@ -1,5 +1,5 @@
 <?php
-
+include ROOT . '/config/constants.php';
 /**
  * Контроллер AdminController
  * Главная страница в админпанели
@@ -10,73 +10,16 @@ class AdminController
      * Action для стартовой страницы "Панель администратора"
      */
     
-
-    
     public function actionIndex()
     {
         // Проверка доступа
         //self::checkAdmin();
-        $breadkrumb[0] = "/admin/index.php"; 
+       // $breadkrumb[0] = "/admin/index.php"; 
         $categoriesList = Category::getCategoriesListAdmin();
         $users = User::getUsersList();
 
         // Подключаем вид
         require_once(ROOT . '/views/admin/admin.php');
-        return true;
-    }
-
-    /**
-     * Action для страницы "Регистрация"
-     */
-    public function actionRegister()
-    {
-        // Переменные для формы
-        $email = false;
-        $password = false;
-        $password_r = false;
-
-        $result = false;
-
-        // Обработка формы
-        if (isset($_POST['submit'])) {
-            // Если форма отправлена 
-            // Получаем данные из формы
-            $password = $_POST['password'];
-            $password_r = $_POST['password_r'];
-            $email = $_POST['email'];
-            
-            // Флаг ошибок
-            $errors = false;
-
-            // Валидация полей
-           
-            if (!User::checkEmail($email)) {
-                $errors[] = 'Неправильный email';
-            }
-            if (!User::checkPassword($password)) {
-                $errors[] = 'Пароль не должен быть короче 6-ти символов';
-            }
-            if (User::checkEmailExists($email)) {
-                $errors[] = 'Такой email уже используется';
-            }
-            if($password != $password_r) {
-                $errors[] = 'Пароли не совпадают';
-            }
-            
-            if ($errors == false) {
-                // Если ошибок нет
-                // Регистрируем пользователя
-             
-                $result = Admin::register($email,$password);
-
-                $adminId = Admin::checkUserData($email, $password);
-                Admin::auth($adminId);
-             }
-        }
-
-        // Подключаем вид
-        require_once(ROOT . '/views/admin/register.php');
-
         return true;
     }
 
@@ -95,9 +38,12 @@ class AdminController
         if (isset($_POST['submit'])) {
             // Если форма отправлена 
             // Получаем данные из формы
-            $email = $_POST['email'];
-            $password = $_POST['password'];
-            $password_r = $_POST['password_r'];
+            $password = htmlspecialchars(trim($_POST['password']));
+            $password_r = htmlspecialchars(trim($_POST['password_r']));
+            $email = htmlspecialchars(trim($_POST['email']));
+            
+            $new_password = password_hash($password, PASSWORD_BCRYPT, ['salt' => SALT]);
+            
 
             // Флаг ошибок
             $errors = false;
@@ -114,20 +60,19 @@ class AdminController
             }
 
             // Проверяем существует ли пользователь
-            $adminId = Admin::checkUserData($email, $password);
+            $adminId = Admin::checkUserData($email, $new_password);
 
             if ($adminId == false) {
                 // Если данные неправильные - показываем ошибку
                 $errors[] = 'Неправильные данные для входа на сайт';
+                echo $new_password;
             } else {
                 // Если данные правильные, запоминаем пользователя (сессия)
                 Admin::auth($adminId);
-
                 // Перенаправляем пользователя в закрытую часть - кабинет 
                 header("Location: /admin/index.php");
             }
         }
-
         // Подключаем вид
         require_once(ROOT . '/views/admin/login.php');
         return true;
@@ -196,11 +141,7 @@ class AdminController
         if (isset($_POST['bsearch'])) {
             $words = $_POST['words'];
         }
-
         $result = Admin::search($words);
-
-
-
         require_once(ROOT . '/views/admin/upravlenie.php');
         return true;
 

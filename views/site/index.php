@@ -1,5 +1,6 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 <?php include ROOT . '/views/layouts/main_menu.php'; ?>
+
 <section>
     <div class="container">
         <div class="row">
@@ -60,19 +61,7 @@
             </div>
             
             
-            <div class="col-sm-5">
-                Общий чат <br>
-                <div id="messages">
-
-                </div>
-                <textarea id="message" placeholder="Введите здесь ваше сообщение"></textarea><br><br>
-
-                <input type="button" id="send_message" data-id="<?php echo $userId; ?>" onclick="send();" value="Отправить сообщение"><br><br>
-
-                <div id="send_message_result"></div>
-                <hr>
-                
-            </div>
+            
             
 
     </div>

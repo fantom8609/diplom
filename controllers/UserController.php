@@ -1,11 +1,11 @@
 <?php
-
+include ROOT . '/config/constants.php';
 /**
  * Контроллер UserController
  */
 class UserController
 {
-
+    
     /**
      * Action для страницы "Регистрация"
      */
@@ -26,16 +26,17 @@ class UserController
         if (isset($_POST['submit'])) {
             // Если форма отправлена 
             // Получаем данные из формы
-            $name = $_POST['name'];
-            $surname = $_POST['surname'];
-            $age = $_POST['age'];
-            $spec = $_POST['spec'];
-            $work_exp = $_POST['work_exp'];
-            $password = $_POST['password'];
-            $password_r = $_POST['password_r'];
-            $email = $_POST['email'];
+            $name = htmlspecialchars(trim($_POST['name']));
+            $surname = htmlspecialchars(trim($_POST['surname']));
+            $age = htmlspecialchars(trim($_POST['age']));
+            $spec = htmlspecialchars(trim($_POST['spec']));
+            $work_exp = htmlspecialchars(trim($_POST['work_exp']));
+            $password = htmlspecialchars(trim($_POST['password']));
+            $password_r = htmlspecialchars(trim($_POST['password_r']));
+            $email = htmlspecialchars(trim($_POST['email']));
             
-
+            $new_password = password_hash($password, PASSWORD_BCRYPT, ['salt' => SALT]);
+            
             // Флаг ошибок
             $errors = false;
 
@@ -64,10 +65,12 @@ class UserController
                 // Если ошибок нет
                 // Регистрируем пользователя
              
-                $result = User::register($name, $surname, $age, $spec, $work_exp, $password, $email);
+                $result = User::register($name, $surname, $age, $spec, $work_exp, $new_password, $email);
 
-                $userId = User::checkUserData($email, $password);
-                User::auth($userId);
+                /*$userId = User::checkUserData($email, $new_password);
+                
+                User::auth($userId);*/
+                
              }
         }
 
@@ -89,12 +92,15 @@ class UserController
         if (isset($_POST['submit'])) {
             // Если форма отправлена 
             // Получаем данные из формы
-            $email = $_POST['email'];
-            $password = $_POST['password'];
-
+            $email = htmlspecialchars(trim($_POST['email']));
+            $password = htmlspecialchars(trim($_POST['password']));
+            
+            /*//хэшируем
+            $new_password = password_hash($password, PASSWORD_BCRYPT, ['salt' => SALT]);
+            echo $email.' '.$new_password;*/
             // Флаг ошибок
             $errors = false;
-
+            
             // Валидация полей
             if (!User::checkEmail($email)) {
                 $errors[] = 'Неправильный email';
@@ -105,6 +111,7 @@ class UserController
 
             // Проверяем существует ли пользователь
             $userId = User::checkUserData($email, $password);
+            if (!$userId) {$errors[] = 'failt';}
 
             if ($userId == false) {
                 // Если данные неправильные - показываем ошибку
@@ -133,13 +140,6 @@ class UserController
         
         // Удаляем информацию о пользователе из сессии
 
-        unset ($_SESSION['name']);
-        unset ($_SESSION['surname']);
-        unset ($_SESSION['age']);
-        unset ($_SESSION['email']);
-        unset ($_SESSION['password']);
-        unset ($_SESSION['work_exp']);
-        unset ($_SESSION['spec']);
         unset ($_SESSION['user']);
         
         // Перенаправляем пользователя на главную страницу

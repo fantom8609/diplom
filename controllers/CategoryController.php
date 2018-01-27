@@ -16,9 +16,6 @@ class CategoryController
 
     }
 
-
-
-
     /**
      * Action для страницы "Категория товаров"
      */

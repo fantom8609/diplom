@@ -421,4 +421,4 @@ ru;mso-fareast-language:ru;mso-bidi-language:ar-sa">январь</span></td>
     </div>
 </section>
 
- 	<?php include ROOT . '/views/layouts/footer.php'; ?>
+ 	<?php include ROOT . '/views/layouts/footer_admin.php'; ?>

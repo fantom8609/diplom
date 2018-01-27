@@ -1,7 +1,11 @@
 <?php
 
 class ChatController {
-    
+    /**
+     * 
+     * @param int $user_id 
+     * @return boolean
+     */
     public function actionSendMessage($user_id) {
         
         $text = $_POST['message'];
@@ -19,6 +23,10 @@ class ChatController {
         return true;
     }
     
+    /**
+     * 
+     * @return boolean
+     */
     public function actionShowMessages() {
         
         $messages = Chat::getMessages();
@@ -32,8 +40,7 @@ class ChatController {
             $message_view = "\n$user_name написал: $text";
             echo $message_view . "<br>";
             
-        }
-        
+        }        
         return true;
     }
     

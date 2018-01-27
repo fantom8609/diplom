@@ -8,16 +8,19 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background:;
     position: relative;
     font-weight:400px;
+    background: #000;
 }
 
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background: #000;
+    color: #fff;
 }
+
 .page-wrapper {
     min-height: 100%;
     margin-bottom: -50px;
@@ -363,7 +366,7 @@ ul.sub-menu {
 
 #footer {
     background: #F0F0E9;
-    height: 50px;
+    
 }
 
 

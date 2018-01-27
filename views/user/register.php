@@ -9,7 +9,7 @@
 
                 
                 <?php if ($result): ?>
-                    <p>Вы зарегистрированы! <a href="/">перейти в личный кабинет</a></p>
+                    <p>Вы зарегистрированы! <a href="/user/login/">войти в систему</a></p>
                 <?php else: ?>
                     <?php if (isset($errors) && is_array($errors)): ?>
                         <ul>

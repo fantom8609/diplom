@@ -3,7 +3,7 @@
 /**
  * Функция __autoload для автоматического подключения классов
  */
-function __autoload($class_name)
+spl_autoload_register(function($class_name)
 {
     // Массив папок, в которых могут находиться необходимые классы
     $array_paths = array(
@@ -24,4 +24,4 @@ function __autoload($class_name)
             include_once $path;
         }
     }
-}
+});

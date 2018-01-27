@@ -14,7 +14,7 @@
             <h5>Подробное описание</h5>
             <textarea  name="coment" rows="8"></textarea> 
             <h5>Выберите файл для загрузки</h5>
-            <input type="file" name="uploaded_file" id="uploaded_file" >
+            <input type="file" name="uploaded_file[]" multiple id="uploaded_file" >
             <input type="submit" name="submit" class="btn btn-default" value="Добавить" />
           </form>
 
@@ -33,4 +33,4 @@
 
 </section>
 
-<?php include ROOT . '/views/layouts/footer.php'; ?>
+<?php include ROOT . '/views/layouts/footer_admin.php'; ?>

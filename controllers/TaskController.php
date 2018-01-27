@@ -1,12 +1,11 @@
 <?php
 
 /**
- * Контроллер ProductController
+ * Контроллер TaskController
  * Товар
  */
 class TaskController
 {
-   
     /**
      * Action для страницы просмотра товара
      * @param integer $productId <p>id товара</p>
@@ -18,6 +17,9 @@ class TaskController
 
         // Получаем инфомрацию о задаче
         $task = Task::getTaskById($taskId);
+        if($task['status'] == 1) {$status = "Текущая";}
+        elseif($task['status'] == 2) {$status = "Проваленная";}
+        elseif($task['status'] == 3) {$status = "Выполненная";}
 
         // Подключаем вид
         require_once(ROOT . '/views/task/view.php');
@@ -58,14 +60,7 @@ class TaskController
         
         //require_once(ROOT . '/views/site/index.php');
         return true;
-
-
-
     }
-
-
-
-
 
     //ADMIN ADD TASK
     public function actionAddtask($userId) {
@@ -99,7 +94,7 @@ class TaskController
                         // Если загружалось, переместим его в нужную папке, дадим новое имя
                     move_uploaded_file($_FILES["uploaded_file"]["tmp_name"], $path_in_project);
                 }
-            };
+            }
         }
         require_once(ROOT . '/views/admin/task_add.php');
         return true;
@@ -160,6 +155,11 @@ class TaskController
         echo "Данные успешно сохранены";
         }
         return true;
+    }
+    
+    public function actionMar()
+    {
+        return "hello";
     }
 
 

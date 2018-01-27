@@ -112,6 +112,9 @@ return array(
     //регистрация пользователя
     'user/register' => 'user/register',
 
+    //выполнение задачи пользователем
+    'task/([0-9]+)/complete' => 'task/view/$1', 
+
     // задача:
     'task/([0-9]+)' => 'task/view/$1', // actionView в TaskController
 

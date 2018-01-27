@@ -7,6 +7,7 @@ class User
 {
      // Количество отображаемых товаров по умолчанию
     const SHOW_BY_DEFAULT = 6;
+    
 
     /**
      * Регистрация пользователя 
@@ -101,12 +102,15 @@ class User
 
         // Получение результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
-        $result->bindParam(':email', $email, PDO::PARAM_INT);
-        $result->bindParam(':password', $password, PDO::PARAM_INT);
+        $result->bindParam(':email', $email, PDO::PARAM_STR);
+        $result->bindParam(':password', $password, PDO::PARAM_STR);
+        
+        
         $result->execute();
 
         // Обращаемся к записи
         $user = $result->fetch();
+        
 
         if ($user) {
             // Если запись существует, возвращаем id пользователя
@@ -358,7 +362,6 @@ class User
         $row = $result->fetch();
         return $row['count'];
     }
-
 
 
 

@@ -37,12 +37,7 @@
                     <a href="/user/logout">Выход</a>
                 <?php endif; ?>
 
-                  <?php if((!empty($_SESSION['admin']))): ?>
-                    <a href="/admin/logout">Выход</a>
-                <?php endif; ?>
-
-
-
+                  
 
                 <div class="header-middle"><!--header-middle-->
                     <div class="container">

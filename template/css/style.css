@@ -32,3 +32,12 @@
 .visible_cont a {
     color: green;
 }
+
+
+.row {
+    margin:0px !important;
+}
+
+.modal-dialog {
+    color: #585858;
+}

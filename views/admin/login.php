@@ -7,7 +7,9 @@
             <div class="col-sm-4 col-sm-offset-4 padding-right">
 
 
-
+                 <?php if (Admin::auth($adminId)): ?>
+                    <p>Добро пожаовать! <a href="/admin/index.php">войти в панель управления системой</a></p>
+                <?php endif; ?>
         
 
                 <?php if (isset($errors) && is_array($errors)): ?>
@@ -36,4 +38,4 @@
     </div>
 </section>
 
-<?php include ROOT . '/views/layouts/footer.php'; ?>
+<?php include ROOT . '/views/layouts/footer_admin.php'; ?>
