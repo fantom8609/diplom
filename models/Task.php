@@ -231,7 +231,7 @@ class Task
      * @param array $options <p>Массив с информацией о товаре</p>
      * @return integer <p>id добавленной в таблицу записи</p>
      */
-    public static function createTaskByUserId($userId,$title,$coment,$upload)
+    public static function createTaskByUserId($userId,$title,$coment,$path_in_project)
     {
         // Соединение с БД
         $db = Db::getConnection();
@@ -239,25 +239,60 @@ class Task
 
         // Текст запроса к БД
         $sql = 'INSERT INTO task (title, coment, status, user_id, upload) '
-        . 'VALUES (:title, :coment, :status, :user_id, :upload)';
+        . 'VALUES (:title, :coment, :status, :user_id, :path_in_project)';
+        
+        $path_in_project = json_encode($path_in_project);
+        
+       //замена обратных слешей на прямые 
+        $path_in_project = str_replace('\\', '/', $path_in_project);  
+        
+        //удаление лишних слешей
+        $path_in_project = preg_replace("/\/\/+/","/",$path_in_project);
 
-        // Получение и возврат результатов. Используется подготовленный запрос
+// Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':title', $title, PDO::PARAM_STR);
         $result->bindParam(':coment', $coment, PDO::PARAM_STR);
         $result->bindParam(':status', $status, PDO::PARAM_INT);
         $result->bindParam(':user_id', $userId, PDO::PARAM_INT);
-        $result->bindParam(':upload', $upload, PDO::PARAM_STR);
+        $result->bindParam(':path_in_project', $path_in_project, PDO::PARAM_STR);
+      
+        $result->execute();
+
+    }
+
+    /**
+     * Добавляет новый товар
+     * @param array $options <p>Массив с информацией о товаре</p>
+     * @return integer <p>id добавленной в таблицу записи</p>
+     */
+    public static function otmetkaTaskByUserId($userId,$coment,$path_in_project)
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+        $status="1";
+
+        // Текст запроса к БД
+        $sql = 'INSERT INTO task (coment, status, user_id, upload) '
+        . 'VALUES (:coment, :status, :user_id, :path_in_project)';
         
+        $path_in_project = json_encode($path_in_project);
+        
+       //замена обратных слешей на прямые 
+        $path_in_project = str_replace('\\', '/', $path_in_project);  
+        
+        //удаление лишних слешей
+        $path_in_project = preg_replace("/\/\/+/","/",$path_in_project);
 
-        if ($result->execute()) {
-            // Если запрос выполенен успешно, возвращаем id добавленной записи
-            return $db->lastInsertId();
+// Получение и возврат результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':coment', $coment, PDO::PARAM_STR);
+        $result->bindParam(':status', $status, PDO::PARAM_INT);
+        $result->bindParam(':user_id', $userId, PDO::PARAM_INT);
+        $result->bindParam(':path_in_project', $path_in_project, PDO::PARAM_STR);
+      
+        $result->execute();
 
-        }
-
-        // Иначе возвращаем 0
-        return 0;
     }
 
 

@@ -16,6 +16,20 @@
                                     <span>Статус задачи: <?php echo $status; ?></span>
                                 </span>
 
+                                <br>
+                                <span>Файлы:</span>
+
+                                <ul>
+                                    <?php foreach ($pathes as $path): ?>
+                                    <li>
+                                       <a id="files" target="_blank" href="<?php
+                                       $path_name=explode("/htdocs",$path);
+                                       print_r ($path_name[1]); ?>" download><?php
+                                       $name=explode("upload/",$path); print_r ($name[1]); ?> </a><br>
+                                    </li>
+                                    <?php endforeach;?>
+                                </ul>
+
 
 
 
@@ -41,7 +55,7 @@
                                             <textarea  name="coment" rows="8"></textarea> 
                                             <h5>Выберите файл для загрузки</h5>
                                             <input type="file" name="uploaded_file[]" multiple  id="uploaded_file" >
-                                            <input class="btn btn-primary" name="submit" type="submit" value="Отправить">
+                                            <input class="btn btn-primary" name="submit_task" type="submit" value="Отправить">
                                          </form>
 
 

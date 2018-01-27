@@ -20,17 +20,10 @@
 
         </div><!--/sign up form-->
       </div>
-
-
-
       <div class="col-sm-4 padding-right">
-
-
-
       </div>
     </div>
   </div>
 
 </section>
-
 <?php include ROOT . '/views/layouts/footer_admin.php'; ?>

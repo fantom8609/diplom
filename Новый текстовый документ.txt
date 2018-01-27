@@ -6,6 +6,7 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/fantom8609/diplom.git
 git push -u origin master
+https://github.com/altiore/mm
 
 
 

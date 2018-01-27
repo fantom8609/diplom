@@ -21,7 +21,6 @@
 <script src="/template/js/motionpack.js"></script>
 <script src="/template/js/main.js"></script>
 
-
 <script>
     $(document).ready(function(){
         //задача выполнена
@@ -42,7 +41,7 @@
             return false;
         });
            //задача активирована
-        $(".change-status-activate").click(function () {
+           $(".change-status-activate").click(function () {
             var id = $(this).attr("data-id");
             $.post("/admin/task/activate/"+id, {}, function (data) {
                 $("#status-task").html(data);
@@ -70,11 +69,13 @@
             });
             return false;
         });
-    });
-    
-    
-    
-    
+
+
+           /*$("#files").mouseover(function () {
+            $("#files").html("download");
+        });*/
+});
+
 </script>
 
 </body>

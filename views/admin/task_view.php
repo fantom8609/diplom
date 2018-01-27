@@ -25,10 +25,22 @@
                                 <span id="status-task"><?php echo Task::getStatusTask($task['status']); ?></span>
                                 <br>
                                 <span>Файлы:</span>
-                                <a  target="_blank" href="<?php $path=$task['upload'];
-                                $path_name=explode("/htdocs",$path);
-                                print_r ($path_name[1]); ?>" download><?php $path=$task['upload'];
-                                $name=explode("upload/",$path); print_r ($name[1]); ?></a><br>
+                                
+                                
+                               
+                                <ul>
+                                    <?php foreach ($pathes as $path): ?>
+                                    <li>
+                                       <a id="files" target="_blank" href="<?php
+                                       $path_name=explode("/htdocs",$path);
+                                       print_r ($path_name[1]); ?>" download><?php
+                                       $name=explode("upload/",$path); print_r ($name[1]); ?> </a><br>
+                                    </li>
+                                    <?php endforeach;?>
+                                </ul>
+                                    
+                                
+                                
                          
                                 <a href="#" class="btn change-status-complete" data-id="<?php echo $task['id'];?>">Отметить выполнение</a><br>
                                 <a href="#" class="btn change-status-failed" data-id="<?php echo $task['id'];?>">Отметить провал</a><br>

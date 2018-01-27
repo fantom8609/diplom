@@ -42,7 +42,7 @@ class AdminController
             $password_r = htmlspecialchars(trim($_POST['password_r']));
             $email = htmlspecialchars(trim($_POST['email']));
             
-            $new_password = password_hash($password, PASSWORD_BCRYPT, ['salt' => SALT]);
+            //$new_password = password_hash($password, PASSWORD_BCRYPT, ['salt' => SALT]);
             
 
             // Флаг ошибок
@@ -60,12 +60,12 @@ class AdminController
             }
 
             // Проверяем существует ли пользователь
-            $adminId = Admin::checkUserData($email, $new_password);
+            $adminId = Admin::checkUserData($email, $password);
 
             if ($adminId == false) {
                 // Если данные неправильные - показываем ошибку
                 $errors[] = 'Неправильные данные для входа на сайт';
-                echo $new_password;
+                echo $password;
             } else {
                 // Если данные правильные, запоминаем пользователя (сессия)
                 Admin::auth($adminId);

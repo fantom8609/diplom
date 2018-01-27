@@ -20,6 +20,8 @@ class TaskController
         if($task['status'] == 1) {$status = "Текущая";}
         elseif($task['status'] == 2) {$status = "Проваленная";}
         elseif($task['status'] == 3) {$status = "Выполненная";}
+        $pathes = json_decode($task['upload']);
+
 
         // Подключаем вид
         require_once(ROOT . '/views/task/view.php');
@@ -39,14 +41,18 @@ class TaskController
         $task = Task::getTaskById($taskId);
         $user_id = $task['user_id'];
         
+        $pathes = json_decode($task['upload']);
+        
         $user = User::getUserById($user_id);
 
         // Подключаем вид
-     
+
         require_once(ROOT . '/views/admin/task_view.php');
         
         return true;
     }
+
+
 
 
     public function actionTasksofuser($userId) {
@@ -80,21 +86,29 @@ class TaskController
             $coment = $_POST['coment'];
            // $upload = $_FILES["uploaded_file"]["tmp_name"];
 
-            $upload_name = $_FILES["uploaded_file"]["name"];
-            $path_in_project = $_SERVER['DOCUMENT_ROOT']."/upload/{$upload_name}";
+            $files = $_FILES["uploaded_file"];
+            print_r($files);
             
-          
-           //добавим задачу и получим ее айди
-            $id = Task::createTaskByUserId($userId,$title,$coment,$path_in_project);
-
-                // Если запись добавлена
-            if ($id) {
-                    // Проверим, загружалось ли через форму file
-                if (is_uploaded_file($_FILES["uploaded_file"]["tmp_name"])) {
-                        // Если загружалось, переместим его в нужную папке, дадим новое имя
-                    move_uploaded_file($_FILES["uploaded_file"]["tmp_name"], $path_in_project);
+            //считаем количество файлов по именам
+            $count = count($files['name']);
+            echo "<br>";
+            for($i=0;$i < $count;$i++) {  
+                $upload_name[$i] = $files["name"][$i];
+                echo $upload_name[$i];
+                $tmp_name[$i] = $files['tmp_name'][$i];
+                $path_in_project[$i] = $_SERVER['DOCUMENT_ROOT']."/upload/{$upload_name[$i]}"." (admin)";
+            // Проверим, загружалось ли через форму file
+                if (is_uploaded_file($files['tmp_name'][$i])) {
+                // Если загружалось, переместим его в нужную папке, дадим новое имя
+                    move_uploaded_file($files['tmp_name'][$i], $path_in_project[$i]);
                 }
             }
+            echo "<br>";
+            print_r($path_in_project);
+            //добавим задачу и получим ее айди
+            Task::createTaskByUserId($userId,$title,$coment,$path_in_project);
+            
+
         }
         require_once(ROOT . '/views/admin/task_add.php');
         return true;
@@ -106,8 +120,8 @@ class TaskController
      * Action для добавления товара в корзину при помощи асинхронного запроса (ajax)
      * @param integer $id <p>id товара</p>
      */
-    public function actionSetCompletedAjax($taskId)
-    {
+     public function actionSetCompletedAjax($taskId)
+     {
         // Добавляем товар в корзину и печатаем результат: количество товаров в корзине
         $status = Task::changeTasksStatusToCompleted($taskId);
         echo Task::getStatusTask($status);
@@ -115,7 +129,7 @@ class TaskController
         return true;
     }
 
-     public function actionSetFailedAjax($taskId)
+    public function actionSetFailedAjax($taskId)
     {
         // Добавляем товар в корзину и печатаем результат: количество товаров в корзине
         $status =Task::changeTasksStatusToFailed($taskId);
@@ -123,7 +137,7 @@ class TaskController
         return true;
     }
 
-       public function actionDeleteAjax($taskId)
+    public function actionDeleteAjax($taskId)
     {
         // Добавляем товар в корзину и печатаем результат: количество товаров в корзине
         Task::deleteTaskById($taskId);
@@ -134,7 +148,7 @@ class TaskController
     }
 
 
-        public function actionActivateAjax($taskId)
+    public function actionActivateAjax($taskId)
     {
         // Добавляем товар в корзину и печатаем результат: количество товаров в корзине
         $status =Task::changeTasksStatusToActive($taskId);
@@ -151,16 +165,53 @@ class TaskController
             echo "Ошибка при вводе данных";
         }
         else {
-        Task::setMark($taskId,$difficultly,$work_cost,$coef_working);
-        echo "Данные успешно сохранены";
+            Task::setMark($taskId,$difficultly,$work_cost,$coef_working);
+            echo "Данные успешно сохранены";
         }
         return true;
     }
-    
-    public function actionMar()
-    {
-        return "hello";
+
+    public function actionOtmetka() {
+        
+        $userId = $_SESSION['user'];
+        // Переменные для формы
+        $title = false;
+        $coment = false;
+        $upload = false;
+
+        // Обработка формы
+        if (isset($_POST['submit_task'])) {
+            // Если форма отправлена 
+            // Получаем данные из формы
+            $coment = $_POST['coment'];
+
+            $files = $_FILES["uploaded_file"];
+            print_r($files);
+            
+            //считаем количество файлов по именам
+            $count = count($files['name']);
+            echo "<br>";
+            for($i=0;$i < $count;$i++) {  
+                $upload_name[$i] = $files["name"][$i];
+                echo $upload_name[$i];
+                $tmp_name[$i] = $files['tmp_name'][$i];
+                $path_in_project[$i] = $_SERVER['DOCUMENT_ROOT']."/upload/{$upload_name[$i]}"." (user)";
+            // Проверим, загружалось ли через форму file
+                if (is_uploaded_file($files['tmp_name'][$i])) {
+                // Если загружалось, переместим его в нужную папке, дадим новое имя
+                    move_uploaded_file($files['tmp_name'][$i], $path_in_project[$i]);
+                }
+            }
+            //добавим задачу и получим ее айди
+            Task::otmetkaTaskByUserId($userId,$coment,$path_in_project);
+            
+
+        }
+        require_once(ROOT . '/views/admin/task_add.php');
+        return true;
     }
+    
+
 
 
 
