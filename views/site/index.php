@@ -7,8 +7,6 @@
             <div class="col-sm-3">
                 <div class="left-sidebar">
 
-                   
-
                     <div class="panel-group category-tests-2">Текущие:
                         <?php foreach ($tasks as $taskItem): ?>
                             <?php if($taskItem['status']==1): ?>
@@ -59,10 +57,6 @@
 
                 </div>
             </div>
-            
-            
-            
-            
 
     </div>
 </section>

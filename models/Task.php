@@ -270,11 +270,12 @@ class Task
     {
         // Соединение с БД
         $db = Db::getConnection();
-        $status="1";
+        $status="3";
 
         // Текст запроса к БД
-        $sql = 'INSERT INTO task (coment, status, user_id, upload) '
-        . 'VALUES (:coment, :status, :user_id, :path_in_project)';
+        $sql = 'UPDATE task SET comment_user = :comment_user, upload_user = :path_in_project,
+        status = :status
+        WHERE user_id = :user_id';
         
         $path_in_project = json_encode($path_in_project);
         
@@ -286,12 +287,12 @@ class Task
 
 // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
-        $result->bindParam(':coment', $coment, PDO::PARAM_STR);
-        $result->bindParam(':status', $status, PDO::PARAM_INT);
+        $result->bindParam(':comment_user', $coment, PDO::PARAM_STR);
         $result->bindParam(':user_id', $userId, PDO::PARAM_INT);
+        $result->bindParam(':status', $status, PDO::PARAM_INT);
         $result->bindParam(':path_in_project', $path_in_project, PDO::PARAM_STR);
       
-        $result->execute();
+        if(!$result->execute()) echo "FAILT";
 
     }
 

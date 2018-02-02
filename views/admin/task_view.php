@@ -29,6 +29,7 @@
                                 
                                
                                 <ul>
+                                    <?php if (!empty($pathes)): ?>
                                     <?php foreach ($pathes as $path): ?>
                                     <li>
                                        <a id="files" target="_blank" href="<?php
@@ -37,6 +38,7 @@
                                        $name=explode("upload/",$path); print_r ($name[1]); ?> </a><br>
                                     </li>
                                     <?php endforeach;?>
+                                    <?php endif; ?>
                                 </ul>
                                     
                                 
@@ -66,17 +68,9 @@
                                             <span>3 показатель </span><br>
                                             <input type="text" name="coef_working" data-id="<?php echo $task['id'];?>"> <br><br>
                                             <input type="button" class="marked"  value="сохранить оценки" data-id="<?php echo $task['id'];?>"> 
-                                         
-                                            
-                                        
-                                     
-                                        
-                                        <!-- Конец блока mydiv -->   
-                                       
+                                        <!-- Конец блока mydiv -->      
                                     </div>
                                 </div>
-                                 
-                               
                             </div> <!--/product-information-->
                             <div id="marked-result"> </div>
                         </div>

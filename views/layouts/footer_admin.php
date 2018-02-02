@@ -26,7 +26,7 @@
         //задача выполнена
         $(".change-status-complete").click(function () {
             var id = $(this).attr("data-id");
-            $.post("/task/"+id+"/complete", {}, function (data) {
+            $.post("/admin/task/setCompleted/"+id, {}, function (data) {
                 $("#status-task").html(data);
             });
             return false;
